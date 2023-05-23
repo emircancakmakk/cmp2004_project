@@ -50,14 +50,4 @@
     <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/playing_button"
             android:onClick="OpenPlayingPart"
-            android:layout_width="152dp"
-            android:layout_height="84dp"
-            android:background="@drawable/button_states"
-            android:text="Play"
-            android:textColor="@color/black"
-            android:paddingTop="0dp"
-            android:paddingBottom="10dp"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="5dp" android:layout_marginBottom="5dp"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

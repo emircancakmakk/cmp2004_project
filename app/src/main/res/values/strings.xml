@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Project</string>
+
+    <string name="d_button1_tr">Pazartesi</string>
+    <string name="d_button2_tr">Salı</string>
+    <string name="d_button3_tr">Çarşamba</string>
+    <string name="d_button4_tr">Perşembe</string>
+    <string name="d_button5_tr">Cuma</string>
+    <string name="d_button6_tr">Cumartesi</string>
+    <string name="d_button7_tr">Pazar</string>
+    <string name="d_button1_eng">Monday</string>
+    <string name="d_button2_eng">Tuesday</string>
+    <string name="d_button3_eng">Wednesday</string>
+    <string name="d_button4_eng">Thursday</string>
+    <string name="d_button5_eng">Friday</string>
+    <string name="d_button6_eng">Saturday</string>
+    <string name="d_button7_eng">Sunday</string>
 </resources>
