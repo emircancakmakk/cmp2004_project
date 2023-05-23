@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".BallScreenActivity"
+            android:exported="false"
+            android:label="Ball Screen Activity"
+            android:parentActivityName=".PlayingPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlayingPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".SimilarPictureActivity"
+            android:exported="false"
+            android:label="Similar Picture Activity"
+            android:parentActivityName=".PlayingPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlayingPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".MultiplicationActivity"
+            android:exported="false"
+            android:label="Multiplication Activity"
+            android:parentActivityName=".LearningPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LearningPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".DirectionsActivity"
+            android:exported="false"
+            android:label="Directions Activity"
+            android:parentActivityName=".LearningPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LearningPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".SpellActivity"
+            android:exported="false"
+            android:label="Spell Activity"
+            android:parentActivityName=".LearningPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LearningPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".DigitBackwardActivity"
+            android:exported="false"
+            android:label="Digit Backward Activity"
+            android:parentActivityName=".LearningPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LearningPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".DigitForwardActivity"
+            android:exported="false"
+            android:label="Digit Forward Activity"
+            android:parentActivityName=".LearningPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LearningPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".MonthsActivity"
+            android:exported="false"
+            android:label="Months Activity"
+            android:parentActivityName=".LearningPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LearningPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".DaysActivity"
+            android:exported="false"
+            android:label="Days Activity"
+            android:parentActivityName=".LearningPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LearningPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".SeasonsActivity"
+            android:exported="false"
+            android:label="Seasons Activity"
+            android:parentActivityName=".LearningPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LearningPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".ClockActivity"
+            android:exported="false"
+            android:label="Clock Activity"
+            android:parentActivityName=".LearningPartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LearningPartActivity" />
+        </activity>
+
+        <activity
+            android:name=".PlayingPartActivity"
+            android:exported="false"
+            android:label="Playing Part"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".LearningPartActivity"
+            android:exported="false"
+            android:label="Learning Part"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

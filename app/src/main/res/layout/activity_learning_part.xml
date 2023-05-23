@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LearningPartActivity">
+
+    <ImageView
+        android:id="@+id/seasons_button"
+        android:layout_width="122dp"
+        android:layout_height="85dp"
+        android:onClick="LearnSeasons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/digit_forward_button"
+        android:layout_width="122dp"
+        android:layout_height="85dp"
+        android:onClick="LearnDigitForward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/clock_button"
+        android:layout_width="122dp"
+        android:layout_height="85dp"
+        android:onClick="LearnClock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/spell_button"
+        android:layout_width="122dp"
+        android:layout_height="85dp"
+        android:onClick="LearnSpell"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/months_button"
+        android:layout_width="122dp"
+        android:layout_height="85dp"
+        android:onClick="LearnMonths"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/days_button"
+        android:layout_width="122dp"
+        android:layout_height="85dp"
+        android:onClick="LearnDays"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/digit_backward_button"
+        android:layout_width="122dp"
+        android:layout_height="85dp"
+        android:onClick="LearnDigitBackward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/direction_button"
+        android:layout_width="122dp"
+        android:layout_height="85dp"
+        android:onClick="LearnDirections"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/multiplication_button"
+        android:layout_width="122dp"
+        android:layout_height="85dp"
+        android:onClick="LearnMultiplication"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
