@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Project</string>
-    <string name="season_button">Mevsim</string>
+    <string name="season_button">Mevsimler</string>
     <string name="d_button1">Pazartesi</string>
     <string name="d_button2">Salı</string>
     <string name="d_button3">Çarşamba</string>
@@ -9,4 +9,11 @@
     <string name="d_button4">Cuma</string>
     <string name="d_button7">Cumartesi</string>
     <string name="d_button6">Pazar</string>
+    <string name="memorise_digits">Sayıları Ezberleme</string>
+    <string name="clock_button">Saat</string>
+    <string name="months_button">Aylar</string>
+    <string name="days_button">Günler</string>
+    <string name="spelling_button">Heceleme</string>
+    <string name="directions_Button">Yönler</string>
+    <string name="days_description">Do you want to learn days of the week? Click on the button!!!</string>
 </resources>
