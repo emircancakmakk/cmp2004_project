@@ -3,22 +3,90 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent" android:id="@+id/learning_view"
     tools:context=".LearningPartActivity">
 
-    <ImageView
-        android:id="@+id/seasons_button"
-        android:layout_width="122dp"
-        android:layout_height="85dp"
-        android:onClick="LearnSeasons"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467"
-        app:srcCompat="@android:drawable/checkbox_off_background" />
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
 
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/seasons_button"
+                    android:onClick="LearnSeasons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seasons"
+                    android:fontFamily="@font/joystix"
+                    android:text="@string/season_button"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="25dp"
+                    android:layout_marginTop="16dp" android:layout_marginStart="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/seasons_button3"
+                    android:onClick="LearnSeasons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seasons"
+                    android:fontFamily="@font/joystix"
+                    android:text="Learn"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="25dp"
+                    android:layout_marginTop="16dp" android:layout_marginStart="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/seasons_button4"
+                    android:onClick="LearnSeasons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seasons"
+                    android:fontFamily="@font/joystix"
+                    android:text="Learn"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="25dp"
+                    android:layout_marginTop="16dp" android:layout_marginStart="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/seasons_button5"
+                    android:onClick="LearnSeasons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seasons"
+                    android:fontFamily="@font/joystix"
+                    android:text="Learn"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="25dp"
+                    android:layout_marginTop="16dp" android:layout_marginStart="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/seasons_button6"
+                    android:onClick="LearnSeasons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seasons"
+                    android:fontFamily="@font/joystix"
+                    android:text="Learn"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="25dp"
+                    android:layout_marginTop="16dp" android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
     <ImageView
         android:id="@+id/digit_forward_button"
         android:layout_width="122dp"

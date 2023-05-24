@@ -25,10 +25,6 @@ public class MainActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
 
-        setContentView(R.layout.activity_main);
-
-        setContentView(R.layout.activity_main);
-
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
@@ -37,17 +33,17 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(this).load(R.drawable.gmainmenu).into(backgroundImageView);
 
 
-        // Load the cloud tile from your drawable resources
-        Bitmap cloudBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ground);
-        BitmapDrawable cloudDrawable = new BitmapDrawable(getResources(), cloudBitmap);
+        // Load the tile from your drawable resources
+        Bitmap tileBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ground);
+        BitmapDrawable tileDrawable = new BitmapDrawable(getResources(), tileBitmap);
 
         // Set the drawable to tile
-        cloudDrawable.setTileModeXY(Shader.TileMode.REPEAT, Shader.TileMode.REPEAT);
-        cloudDrawable.setDither(true);
+        tileDrawable.setTileModeXY(Shader.TileMode.REPEAT, Shader.TileMode.REPEAT);
+        tileDrawable.setDither(true);
 
-        // Find the parent view and set the tiled sky drawable as its background
+        // Find the parent view and set the tiled tile drawable as its background
         ConstraintLayout parentView = findViewById(R.id.parent_view);
-        parentView.setBackground(cloudDrawable);
+        parentView.setBackground(tileDrawable);
 
     }
 

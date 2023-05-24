@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project</string>
+    <string name="season_button">Mevsim</string>
+    <string name="d_button1">Pazartesi</string>
+    <string name="d_button2">Salı</string>
+    <string name="d_button3">Çarşamba</string>
+    <string name="d_button5">Perşembe</string>
+    <string name="d_button4">Cuma</string>
+    <string name="d_button7">Cumartesi</string>
+    <string name="d_button6">Pazar</string>
+</resources>

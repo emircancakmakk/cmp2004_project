@@ -22,7 +22,7 @@
                 android:layout_width="232dp"
                 android:layout_height="88dp"
                 android:fontFamily="@font/myfont"
-                android:text="@string/d_button1_eng"
+                android:text="@string/d_button1"
                 android:textSize="20sp"
                 android:onClick="PlayMonday" />
 
@@ -31,7 +31,7 @@
                 android:layout_width="232dp"
                 android:layout_height="88dp"
                 android:fontFamily="@font/myfont"
-                android:text="@string/d_button2_eng"
+                android:text="@string/d_button2"
                 android:textSize="18sp"
                 android:onClick="PlayTuesday" />
 
@@ -40,7 +40,7 @@
                 android:layout_width="232dp"
                 android:layout_height="88dp"
                 android:fontFamily="@font/myfont"
-                android:text="@string/d_button3_eng"
+                android:text="@string/d_button3"
                 android:textSize="20sp"
                 android:onClick="PlayWednesday" />
 
@@ -49,7 +49,7 @@
                 android:layout_width="232dp"
                 android:layout_height="88dp"
                 android:fontFamily="@font/myfont"
-                android:text="@string/d_button4_eng"
+                android:text="@string/d_button4"
                 android:textSize="20sp"
                 android:onClick="PlayThursday" />
 
@@ -58,7 +58,7 @@
                 android:layout_width="232dp"
                 android:layout_height="88dp"
                 android:fontFamily="@font/myfont"
-                android:text="@string/d_button5_eng"
+                android:text="@string/d_button5"
                 android:textSize="24sp"
                 android:onClick="PlayFriday" />
 
@@ -67,7 +67,7 @@
                 android:layout_width="232dp"
                 android:layout_height="88dp"
                 android:fontFamily="@font/myfont"
-                android:text="@string/d_button6_eng"
+                android:text="@string/d_button6"
                 android:textSize="20sp"
                 android:onClick="PlaySaturday" />
 
@@ -76,7 +76,7 @@
                 android:layout_width="232dp"
                 android:layout_height="88dp"
                 android:fontFamily="@font/myfont"
-                android:text="@string/d_button7_eng"
+                android:text="@string/d_button7"
                 android:textSize="20sp"
                 android:onClick="PlaySunday" />
         </LinearLayout>
