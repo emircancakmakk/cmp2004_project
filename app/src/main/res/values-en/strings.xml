@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Project</string>
     <string name="d_button1">Monday</string>
@@ -7,7 +8,7 @@
     <string name="d_button5">Friday</string>
     <string name="d_button6">Saturday</string>
     <string name="d_button7">Sunday</string>
-    <string name="season_button">Season</string>
+    <string name="season_button">Seasons</string>
     <string name="memorise_digits">Memorise Digits</string>
     <string name="clock_button">Clock</string>
     <string name="months_button">Months</string>
