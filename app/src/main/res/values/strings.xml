@@ -23,4 +23,6 @@
     <string name="main_dialouge1">Hello! I am Rex and I am here to help you! You can continue the dialogue by clicking
         on me.
     </string>
+    <string name="learn_button_text">Learn</string>
+    <string name="play_button_text">Play</string>
 </resources>

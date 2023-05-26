@@ -12,15 +12,15 @@ import android.widget.TextView;
 import org.jetbrains.annotations.NotNull;
 
 class TalkingCharacter {
-    private Dialog dialog;
-    private ImageView characterImageView;
-    private TextView speechBubbleTextView;
-    private String[] dialogueChunks;
+    private final Dialog dialog;
+    private final ImageView characterImageView;
+    private final TextView speechBubbleTextView;
+    private final String[] dialogueChunks;
     private int currentChunkIndex = 0;
     private int characterIndex = 0;
-    private Handler handler = new Handler();
+    private final Handler handler = new Handler();
     private boolean isSpeaking = false;
-    private int speed = 100; // Change this value to control the speed of the text
+    private final int speed = 100; // Change this value to control the speed of the text
 
     // Constructor
     TalkingCharacter(Activity activity, int dialogLayoutId, String[] dialogueChunks){
@@ -88,7 +88,7 @@ class TalkingCharacter {
 
 
     private class CharacterRunnable implements Runnable {
-        private String text;
+        private final String text;
 
         CharacterRunnable(String text) {
             this.text = text;
@@ -115,7 +115,7 @@ class TalkingCharacter {
     }
 
     private boolean isPointInsideView(float x, float y, @NotNull View view) {
-        int location[] = new int[2];
+        int[] location = new int[2];
         view.getLocationOnScreen(location);
         int viewX = location[0];
         int viewY = location[1];

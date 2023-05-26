@@ -24,4 +24,6 @@
         test in playing part while playing mini games!!!
     </string>
     <string name="main_dialouge_4">You can summon me by pressing the \"?\" button on the top right. Good Luck!</string>
+    <string name="learn_button_text">Learn</string>
+    <string name="play_button_text">Play</string>
 </resources>

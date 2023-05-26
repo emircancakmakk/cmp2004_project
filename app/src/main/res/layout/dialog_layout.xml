@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
             android:fontFamily="@font/joystix"
-            android:textSize="20dp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/characterImageView" android:layout_marginBottom="20dp"
     />
 
