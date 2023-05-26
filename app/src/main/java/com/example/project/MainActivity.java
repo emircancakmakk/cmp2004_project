@@ -11,9 +11,11 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.bumptech.glide.Glide;
-
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String PREF_QUESTION_MARK_CALLED = "question_mark_called";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +47,21 @@ public class MainActivity extends AppCompatActivity {
         ConstraintLayout parentView = findViewById(R.id.parent_view);
         parentView.setBackground(tileDrawable);
 
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        boolean questionMarkCalled = prefs.getBoolean(PREF_QUESTION_MARK_CALLED, false);
+
+        if (!questionMarkCalled) {
+            findViewById(R.id.question_mark_button).performClick(); // Trigger the question_mark function
+            prefs.edit().putBoolean(PREF_QUESTION_MARK_CALLED, true).apply();
+        }
+
     }
 
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.main_dialouge1), getString(R.string.main_dialouge2), getString(R.string.main_dialouge3),getString(R.string.main_dialouge_4)}; // Add your own dialogue here
+        TalkingCharacter talkingCharacter = new TalkingCharacter(MainActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
+    }
     public void OpenLearningPart(View view) {
         Intent intent = new Intent(this, LearningPartActivity.class);
         startActivity(intent);
