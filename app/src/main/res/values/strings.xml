@@ -15,4 +15,14 @@
     <string name="spelling_button">Spelling</string>
     <string name="directions_Button">Directions</string>
     <string name="days_description">Do you want to learn days of the week? Click on the button!!!</string>
+    <string name="main_dialouge2">There is two parts in this game, learning and playing.</string>
+    <string name="main_dialouge_4">You can summon me by pressing the \"?\" button on the top right. Good Luck!</string>
+    <string name="main_dialouge3">You start with the learning part and learn the concepts! Then put your knowledge to
+        test in playing part while playing mini games!!!
+    </string>
+    <string name="main_dialouge1">Hello! I am Rex and I am here to help you! You can continue the dialogue by clicking
+        on me.
+    </string>
+    <string name="learn_button_text">Learn</string>
+    <string name="play_button_text">Play</string>
 </resources>
