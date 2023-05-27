@@ -28,4 +28,12 @@
     <string name="play_button_text">Play</string>
     <string name="prev">Prev.</string>
     <string name="next">Next</string>
+    <string name="season_name_spring">Spring</string>
+    <string name="season_name_summer">Summer</string>
+    <string name="season_name_autumn">Autumn</string>
+    <string name="season_name_winter">Winter</string>
+    <string name="season_credit_spring">\@anasabdin</string>
+    <string name="season_credit_summer">\@anasabdin</string>
+    <string name="season_credit_autumn">\@anasabdin</string>
+    <string name="season_credit_winter">\@anasabdin</string>
 </resources>

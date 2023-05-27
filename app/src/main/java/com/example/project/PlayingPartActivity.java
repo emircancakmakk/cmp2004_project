@@ -19,6 +19,11 @@ public class PlayingPartActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void PlaySeasons(View view) {
+        Intent intent = new Intent(this, SeasonsPlayingActivity.class);
+        startActivity(intent);
+    }
+
     public void PlaySimilarPictures(View view) {
         Intent intent = new Intent(this, SimilarPictureActivity.class);
         startActivity(intent);

@@ -29,4 +29,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_media_play" />
+    <ImageView
+            android:id="@+id/similar_pictures_button2"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
+            android:onClick="PlaySeasons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_media_play" app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintVertical_bias="0.398"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
