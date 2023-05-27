@@ -25,4 +25,20 @@
     </string>
     <string name="learn_button_text">Learn</string>
     <string name="play_button_text">Play</string>
+    <string name="season_image" translatable="false">Season Image</string>
+    <string name="prev">Prev.</string>
+    <string name="next">Next</string>
+    <string-array name="season_names">
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Autumn</item>
+        <item>Winter</item>
+    </string-array>
+
+    <string-array name="season_credits">
+        <item>Credits for spring gif</item>
+        <item>Credits for summer gif</item>
+        <item>Credits for autumn gif</item>
+        <item>Credits for winter gif</item>
+    </string-array>
 </resources>
