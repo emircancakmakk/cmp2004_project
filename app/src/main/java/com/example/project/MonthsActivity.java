@@ -70,7 +70,7 @@ public class MonthsActivity extends AppCompatActivity {
         FrameLayout rootLayout = new FrameLayout(this);
 
         // Create a SeamlessBackgroundView and add it to the FrameLayout
-        SeamlessBackgroundView backgroundView = new SeamlessBackgroundView(this, R.drawable.bonebackground, R.drawable.dayssky);
+        SeamlessBackgroundView backgroundView = new SeamlessBackgroundView(this, R.drawable.bonebackgroundinv, R.drawable.daysskyinv);
         rootLayout.addView(backgroundView);
 
         // Inflate the activity's layout and add it to the FrameLayout

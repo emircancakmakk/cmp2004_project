@@ -1,9 +1,7 @@
 package com.example.project;
 
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
+import android.graphics.*;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.SurfaceHolder;
@@ -36,6 +34,11 @@ public class GameSurface extends SurfaceView implements Runnable {
         // Set the initial position of the ball to the center of the screen
         ballX = screenWidth / 2f;
         ballY = screenHeight / 2f;
+
+        setZOrderOnTop(true); // Necessary
+        SurfaceHolder holder = getHolder();
+        holder.setFormat(PixelFormat.TRANSLUCENT);
+
     }
 
 
@@ -43,7 +46,7 @@ public class GameSurface extends SurfaceView implements Runnable {
         while (isRunning) {
             if (surfaceHolder.getSurface().isValid()) {
                 Canvas canvas = surfaceHolder.lockCanvas();
-                canvas.drawColor(Color.WHITE);
+                canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
 
                 // Update ball position
                 ballX += speedX;

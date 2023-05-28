@@ -8,49 +8,77 @@
     tools:context=".DigitForwardActivity">
 
     <TextView
-        android:id="@+id/numberTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:gravity="center"
-        android:textSize="48sp" />
+            android:id="@+id/numberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/joystix"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
 
     <EditText
-        android:id="@+id/userInputEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter the number sequence"
-        android:inputType="number"
-        android:layout_marginBottom="16dp" />
+            android:id="@+id/userInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/joystix"
+            android:textColor="@color/black"
+            android:hint="Enter the numbers in order"
+            android:textSize="12sp"
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Start"
-        android:layout_marginBottom="16dp" />
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bone_button_states"
+            android:fontFamily="@font/joystix"
+            android:text="Start"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"/>
 
-    <Button
-        android:id="@+id/submitButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginBottom="16dp" />
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bone_button_states"
+            android:fontFamily="@font/joystix"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"/>
 
-    <Button
-        android:id="@+id/restartButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Restart"
-        android:layout_marginBottom="16dp"
-        android:enabled="false" />
-
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/restartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bone_button_states"
+            android:fontFamily="@font/joystix"
+            android:text="Restart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"/>
     <TextView
-        android:id="@+id/correctnessTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#FF0000" />
+            android:id="@+id/correctnessTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/joystix"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
