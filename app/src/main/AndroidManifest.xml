@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
+            android:name=".PlayDaysActivity"
+            android:exported="false" />
+        <activity
             android:name=".BallScreenActivity"
             android:exported="false"
             android:label="Ball Screen Activity"
@@ -20,7 +23,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PlayingPartActivity" />
         </activity>
-
         <activity
             android:name=".SimilarPictureActivity"
             android:exported="false"
@@ -30,7 +32,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PlayingPartActivity" />
         </activity>
-
         <activity
                 android:name=".SeasonsPlayingActivity"
                 android:exported="false"
@@ -50,7 +51,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LearningPartActivity" />
         </activity>
-
         <activity
             android:name=".DirectionsActivity"
             android:exported="false"
@@ -60,7 +60,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LearningPartActivity" />
         </activity>
-
         <activity
             android:name=".SpellActivity"
             android:exported="false"
@@ -70,7 +69,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LearningPartActivity" />
         </activity>
-
         <activity
             android:name=".DigitBackwardActivity"
             android:exported="false"
@@ -80,7 +78,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LearningPartActivity" />
         </activity>
-
         <activity
             android:name=".DigitForwardActivity"
             android:exported="false"
@@ -90,7 +87,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LearningPartActivity" />
         </activity>
-
         <activity
             android:name=".MonthsActivity"
             android:exported="false"
@@ -100,7 +96,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LearningPartActivity" />
         </activity>
-
         <activity
             android:name=".DaysActivity"
             android:exported="false"
@@ -110,7 +105,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LearningPartActivity" />
         </activity>
-
         <activity
             android:name=".SeasonsActivity"
             android:exported="false"
@@ -120,7 +114,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LearningPartActivity" />
         </activity>
-
         <activity
             android:name=".ClockActivity"
             android:exported="false"
@@ -130,7 +123,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LearningPartActivity" />
         </activity>
-
         <activity
             android:name=".PlayingPartActivity"
             android:exported="false"
@@ -140,7 +132,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".LearningPartActivity"
             android:exported="false"
@@ -150,7 +141,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
