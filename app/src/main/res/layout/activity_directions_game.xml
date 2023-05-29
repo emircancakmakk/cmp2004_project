@@ -1,64 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".DirectionsGameActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:scaleType="fitCenter"
-        android:layout_centerInParent="true" />
-
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintTop_toTopOf="parent"/>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageView"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
-
-        <Button
-            android:id="@+id/buttonNorth"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="North" />
-
-        <Button
-            android:id="@+id/buttonWest"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="West" />
-
-        <Button
-            android:id="@+id/buttonEast"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="East" />
-
-        <Button
-            android:id="@+id/buttonSouth"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="South" />
+            android:layout_below="@id/imageView"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/linearLayout3">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonNorth"
+                    android:onClick="OpenLearningPart"
+                    android:layout_gravity="center"
+                    android:layout_width="152dp"
+                    android:layout_height="84dp"
+                    android:background="@drawable/button_states"
+                    android:fontFamily="@font/joystix"
+                    android:text="North"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="25dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonSouth"
+                    android:onClick="OpenLearningPart"
+                    android:layout_gravity="center"
+                    android:layout_width="152dp"
+                    android:layout_height="84dp"
+                    android:background="@drawable/button_states"
+                    android:fontFamily="@font/joystix"
+                    android:text="South"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="25dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonEast"
+                    android:onClick="OpenLearningPart"
+                    android:layout_width="152dp"
+                    android:layout_height="84dp"
+                    android:background="@drawable/button_states"
+                    android:fontFamily="@font/joystix"
+                    android:text="East"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="25dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonWest"
+                    android:onClick="OpenLearningPart"
+                    android:layout_width="152dp"
+                    android:layout_height="84dp"
+                    android:background="@drawable/button_states"
+                    android:fontFamily="@font/joystix"
+                    android:text="West"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="25dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/answerTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonSouth"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+            android:text="What direction is Rex looking at?"
+            android:fontFamily="@font/joystix"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"/>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

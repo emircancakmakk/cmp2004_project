@@ -12,16 +12,10 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
-            android:name=".PlayDirectionsActivity"
-            android:exported="false" />
-        <activity
             android:name=".DirectionsGameActivity"
             android:exported="false" />
         <activity
             android:name=".PlayMonthsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NextActivity"
             android:exported="false" />
         <activity
             android:name=".PlayDaysActivity"
@@ -44,6 +38,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PlayingPartActivity" />
         </activity>
+        <activity
+                android:name=".SeasonsPlayingActivity"
+                android:exported="false"
+                android:label="Seasons Playing Activity"
+                android:parentActivityName=".PlayingPartActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".PlayingPartActivity" />
+        </activity>
+
         <activity
             android:name=".MultiplicationActivity"
             android:exported="false"

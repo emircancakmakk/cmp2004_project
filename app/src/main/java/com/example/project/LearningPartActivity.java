@@ -28,7 +28,7 @@ public class LearningPartActivity extends AppCompatActivity {
         }
 
         // Load the tile from your drawable resources
-        Bitmap tileBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.fossil);
+        Bitmap tileBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ground);
         BitmapDrawable tileDrawable = new BitmapDrawable(getResources(), tileBitmap);
 
         // Set the drawable to tile
@@ -56,11 +56,6 @@ public class LearningPartActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void LearnSpell(View view) {
-        Intent intent = new Intent(this, SpellActivity.class);
-        startActivity(intent);
-    }
-
     public void LearnMonths(View view) {
         Intent intent = new Intent(this, MonthsActivity.class);
         startActivity(intent);
@@ -78,11 +73,6 @@ public class LearningPartActivity extends AppCompatActivity {
 
     public void LearnDirections(View view) {
         Intent intent = new Intent(this, DirectionsActivity.class);
-        startActivity(intent);
-    }
-
-    public void LearnMultiplication(View view) {
-        Intent intent = new Intent(this, MultiplicationActivity.class);
         startActivity(intent);
     }
 }

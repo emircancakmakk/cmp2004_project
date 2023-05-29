@@ -1,5 +1,6 @@
 package com.example.project;
 
+import android.view.WindowManager;
 import android.widget.FrameLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +18,8 @@ public class DaysActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_days);
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Code for setting background
         getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
@@ -40,7 +42,7 @@ public class DaysActivity extends AppCompatActivity {
 
         // Set the FrameLayout as the content view
         setContentView(rootLayout);
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         btn_1 = findViewById(R.id.button1);
         btn_2 = findViewById(R.id.button2);
         btn_3 = findViewById(R.id.button3);
@@ -105,5 +107,11 @@ public class DaysActivity extends AppCompatActivity {
                 mediaPlayer7.start();
             }
         });
+    }
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.days_dialouge1), getString(R.string.days_dialouge2), getString(R.string.days_dialouge3)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(DaysActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }

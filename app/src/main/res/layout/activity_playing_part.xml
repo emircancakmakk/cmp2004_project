@@ -4,68 +4,215 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/playing_view"
     tools:context=".PlayingPartActivity">
 
-    <ImageView
-        android:id="@+id/ball_screen_button"
-        android:layout_width="80dp"
-        android:layout_height="68dp"
-        android:onClick="PlayBallScreen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603"
-        app:srcCompat="@android:drawable/ic_media_play" />
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/similar_pictures_button"
-        android:layout_width="80dp"
-        android:layout_height="68dp"
-        android:onClick="PlaySimilarPictures"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_media_play" />
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" app:srcCompat="@drawable/dino_avatar1"
+                        android:id="@+id/imageView3"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Playing Time!"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_gravity="center_vertical"/>
+            </LinearLayout>
 
-    <ImageView
-        android:id="@+id/play_days_button"
-        android:layout_width="80dp"
-        android:layout_height="68dp"
-        android:onClick="PlayDays"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398"
-        app:srcCompat="@android:drawable/ic_media_play" />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/play_days_button"
+                        android:onClick="PlayDays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/daysoftheweekr"
+                        android:fontFamily="@font/joystix"
+                        android:text="@string/days_button"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="25dp"
+                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/days_description"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_gravity="center_vertical"/>
+            </LinearLayout>
 
-    <ImageView
-        android:id="@+id/play_months_button"
-        android:layout_width="80dp"
-        android:layout_height="68dp"
-        android:onClick="PlayMonths"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295"
-        app:srcCompat="@android:drawable/ic_media_play" />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/play_months_button"
+                        android:onClick="PlayMonths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/monthsr"
+                        android:fontFamily="@font/joystix"
+                        android:text="@string/months_button"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="25dp"
+                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seasons description"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/play_directions_button"
-        android:layout_width="80dp"
-        android:layout_height="68dp"
-        android:onClick="PlayDirections"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193"
-        app:srcCompat="@android:drawable/ic_media_play" />
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/playing_seasons_button"
+                        android:onClick="PlaySeasons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/seasons"
+                        android:fontFamily="@font/joystix"
+                        android:text="@string/season_button"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="25dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="25dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seasons description"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_marginStart="25dp"
+
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/multiplication_button"
+                        android:onClick="LearnMultiplication"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/multiplylogor"
+                        android:fontFamily="@font/joystix"
+                        android:text="Multiplication"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="25dp"
+                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seasons description"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/ball_screen_button"
+                        android:onClick="PlayBallScreen"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/egglogor"
+                        android:fontFamily="@font/joystix"
+                        android:text="Follow Egg"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="25dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="25dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seasons description"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_marginStart="25dp"
+
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/play_direction_button"
+                        android:onClick="PlayDirections"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/directionslogor"
+                        android:fontFamily="@font/joystix"
+                        android:text="@string/directions_Button"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="25dp"
+                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seasons description"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

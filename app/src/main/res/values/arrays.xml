@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="season_names">
+        <item>@string/season_name_spring</item>
+        <item>@string/season_name_summer</item>
+        <item>@string/season_name_autumn</item>
+        <item>@string/season_name_winter</item>
+    </string-array>
+
+    <string-array name="season_credits">
+        <item>@string/season_credit_spring</item>
+        <item>@string/season_credit_summer</item>
+        <item>@string/season_credit_autumn</item>
+        <item>@string/season_credit_winter</item>
+    </string-array>
+</resources>

@@ -16,19 +16,39 @@
                       android:orientation="vertical">
 
             <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" app:srcCompat="@drawable/dino_avatar1"
+                        android:id="@+id/imageView3"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/learning_time_rex"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:layout_marginStart="25dp"
+                        android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                 <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/days_button"
                         android:onClick="LearnDays"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
                         android:background="@drawable/daysoftheweek"
                         android:fontFamily="@font/joystix"
                         android:text="@string/days_button"
                         android:textColor="@color/white"
-                        android:textSize="25dp"
+                        android:textSize="25sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
@@ -38,7 +58,34 @@
                         android:text="@string/days_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
+                        android:layout_marginStart="25dp"
+                        android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/months_button"
+                        android:onClick="LearnMonths"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/months"
+                        android:fontFamily="@font/joystix"
+                        android:text="@string/months_button"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="25dp"
+                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/months_description"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
                         android:layout_gravity="center_vertical"/>
             </LinearLayout>
@@ -50,13 +97,13 @@
                 <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/seasons_button"
                         android:onClick="LearnSeasons"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/seasons"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/seasonslogog"
                         android:fontFamily="@font/joystix"
                         android:text="@string/season_button"
                         android:textColor="@color/white"
-                        android:textSize="25dp"
+                        android:textSize="25sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp"
@@ -65,44 +112,15 @@
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seasons description"
+                        android:text="@string/seasons_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="30sp"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
-
                         android:layout_gravity="center_vertical"/>
 
             </LinearLayout>
 
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-            <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/multiplication_button"
-                    android:onClick="LearnMultiplication"
-                    android:layout_width="160dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/seasons"
-                    android:fontFamily="@font/joystix"
-                    android:text="@string/memorise_digits"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:paddingTop="0dp"
-                    android:paddingBottom="25dp"
-                    android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Seasons description"
-                    android:fontFamily="@font/joystix"
-                    android:textColor="@color/white"
-                    android:textSize="30dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_gravity="center_vertical"/>
-
-        </LinearLayout>
 
             <LinearLayout
                     android:layout_width="match_parent"
@@ -112,134 +130,22 @@
                         android:id="@+id/direction_button"
                         android:onClick="LearnDirections"
                         android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/seasons"
+                        android:layout_height="160dp"
+                        android:background="@drawable/directions_learn"
                         android:fontFamily="@font/joystix"
                         android:text="@string/directions_Button"
                         android:textColor="@color/white"
-                        android:textSize="30dp"
+                        android:textSize="30sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seasons description"
+                        android:text="@string/directions_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="30dp"
-                        android:layout_marginStart="25dp"
-                        android:layout_gravity="center_vertical"/>
-            </LinearLayout>
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/digit_backward_button"
-                        android:onClick="LearnDigitBackward"
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/seasons"
-                        android:fontFamily="@font/joystix"
-                        android:text="Memorise Digits Backward"
-                        android:textColor="@color/white"
-                        android:textSize="20dp"
-                        android:paddingTop="0dp"
-                        android:paddingBottom="25dp"
-                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Seasons description"
-                        android:fontFamily="@font/joystix"
-                        android:textColor="@color/white"
-                        android:textSize="30dp"
-                        android:layout_marginStart="25dp"
-                        android:layout_gravity="center_vertical"/>
-            </LinearLayout>
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/spell_button"
-                        android:onClick="LearnSpell"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/seasons"
-                        android:fontFamily="@font/joystix"
-                        android:text="@string/spelling_button"
-                        android:textColor="@color/white"
-                        android:textSize="22dp"
-                        android:paddingTop="0dp"
-                        android:paddingBottom="25dp"
-                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Seasons description"
-                        android:fontFamily="@font/joystix"
-                        android:textColor="@color/white"
-                        android:textSize="30dp"
-                        android:layout_marginStart="25dp"
-                        android:layout_gravity="center_vertical"/>
-            </LinearLayout>
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/months_button"
-                        android:onClick="LearnMonths"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/seasons"
-                        android:fontFamily="@font/joystix"
-                        android:text="@string/months_button"
-                        android:textColor="@color/white"
-                        android:textSize="25dp"
-                        android:paddingTop="0dp"
-                        android:paddingBottom="25dp"
-                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Seasons description"
-                        android:fontFamily="@font/joystix"
-                        android:textColor="@color/white"
-                        android:textSize="30dp"
-                        android:layout_marginStart="25dp"
-                        android:layout_gravity="center_vertical"/>
-            </LinearLayout>
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/clock_button"
-                        android:onClick="LearnClock"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/seasons"
-                        android:fontFamily="@font/joystix"
-                        android:text="@string/clock_button"
-                        android:textColor="@color/white"
-                        android:textSize="25dp"
-                        android:paddingTop="0dp"
-                        android:paddingBottom="25dp"
-                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Seasons description"
-                        android:fontFamily="@font/joystix"
-                        android:textColor="@color/white"
-                        android:textSize="30dp"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
                         android:layout_gravity="center_vertical"/>
             </LinearLayout>
@@ -252,22 +158,49 @@
                         android:id="@+id/digit_forward_button"
                         android:onClick="LearnDigitForward"
                         android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/seasons"
+                        android:layout_height="160dp"
+                        android:background="@drawable/brainlogoforward"
                         android:fontFamily="@font/joystix"
                         android:text="@string/memorise_digits"
                         android:textColor="@color/white"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seasons description"
+                        android:text="@string/digits_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="30dp"
+                        android:textSize="20sp"
+                        android:layout_marginStart="25dp"
+                        android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/digit_backward_button"
+                        android:onClick="LearnDigitBackward"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/brainlogobackward"
+                        android:fontFamily="@font/joystix"
+                        android:text="@string/memorise_digits_backward"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="25dp"
+                        android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/backward_digits_description"
+                        android:fontFamily="@font/joystix"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
                         android:layout_gravity="center_vertical"/>
             </LinearLayout>

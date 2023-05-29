@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.graphics.Shader;
 import android.text.TextUtils;
 import android.widget.Button;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        currentLanguage = preferences.getString("language", "eng");
 
         // Dil ayarlarını kontrol et
 
@@ -58,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView backgroundImageView = findViewById(R.id.island_view);
         Glide.with(this).load(R.drawable.gmainmenu).into(backgroundImageView);
+
 
         // Load the tile from your drawable resources
         Bitmap tileBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ground);
@@ -104,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void question_mark(View v) {
         String[] dialogueChunks = {getString(R.string.main_dialouge1), getString(R.string.main_dialouge2), getString(R.string.main_dialouge3),getString(R.string.main_dialouge_4)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         TalkingCharacter talkingCharacter = new TalkingCharacter(MainActivity.this, R.layout.dialog_layout, dialogueChunks);
         talkingCharacter.showDialog();
     }
