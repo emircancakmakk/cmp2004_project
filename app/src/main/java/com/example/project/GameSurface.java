@@ -1,6 +1,7 @@
 package com.example.project;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.*;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -61,7 +62,9 @@ public class GameSurface extends SurfaceView implements Runnable {
                 }
 
                 // Draw ball on canvas
-                canvas.drawCircle(ballX, ballY, ballRadius, paint);
+                Resources res = getResources();
+                Bitmap bitmap = BitmapFactory.decodeResource(res, R.drawable.egg);
+                canvas.drawBitmap(bitmap, ballX-75, ballY-75, paint);
 
                 surfaceHolder.unlockCanvasAndPost(canvas);
             }

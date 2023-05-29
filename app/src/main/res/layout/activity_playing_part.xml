@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/playing_view"
     tools:context=".PlayingPartActivity">
 
     <ScrollView
@@ -271,17 +272,6 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-    <ImageView
-        android:id="@+id/similar_pictures_button"
-        android:layout_width="80dp"
-        android:layout_height="68dp"
-        android:onClick="PlaySimilarPictures"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_media_play" />
-
     <ImageView
         android:id="@+id/play_days_button"
         android:layout_width="80dp"
