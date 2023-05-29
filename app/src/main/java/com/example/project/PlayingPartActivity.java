@@ -28,4 +28,14 @@ public class PlayingPartActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PlayDaysActivity.class);
         startActivity(intent);
     }
+
+    public void PlayMonths(View view) {
+        Intent intent = new Intent(this, PlayMonthsActivity.class);
+        startActivity(intent);
+    }
+
+    public void PlayDirections(View view) {
+        Intent intent = new Intent(this, DirectionsGameActivity.class);
+        startActivity(intent);
+    }
 }
