@@ -52,7 +52,7 @@ public class DigitForwardActivity extends AppCompatActivity {
         rootLayout.addView(backgroundView);
 
         // Inflate the activity's layout and add it to the FrameLayout
-        View contentView = getLayoutInflater().inflate(R.layout.activity_digit_backward, rootLayout, false);
+        View contentView = getLayoutInflater().inflate(R.layout.activity_digit_forward, rootLayout, false);
         rootLayout.addView(contentView);
 
         // Set the FrameLayout as the content view

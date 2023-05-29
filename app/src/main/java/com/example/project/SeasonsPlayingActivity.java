@@ -2,6 +2,8 @@ package com.example.project;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
@@ -16,10 +18,37 @@ public class SeasonsPlayingActivity extends AppCompatActivity {
     private Button springButton, summerButton, autumnButton, winterButton;
     private HashMap<String, Integer[]> seasonImages;
 
+    private int lastImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seasons_playing);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Code for setting background
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
+// Create a FrameLayout to hold your SeamlessBackgroundView and the activity's layout
+        FrameLayout rootLayout = new FrameLayout(this);
+
+        // Create a SeamlessBackgroundView and add it to the FrameLayout
+        SeamlessBackgroundView backgroundView = new SeamlessBackgroundView(this, R.drawable.forestpixel, R.drawable.forestsky);
+        rootLayout.addView(backgroundView);
+
+        // Inflate the activity's layout and add it to the FrameLayout
+        View contentView = getLayoutInflater().inflate(R.layout.activity_seasons_playing, rootLayout, false);
+        rootLayout.addView(contentView);
+
+        // Set the FrameLayout as the content view
+        setContentView(rootLayout);
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         // Initialize buttons and ImageView
         seasonImageView = findViewById(R.id.seasonImageView);
@@ -30,10 +59,12 @@ public class SeasonsPlayingActivity extends AppCompatActivity {
 
         // Initialize season images
         seasonImages = new HashMap<>();
-        seasonImages.put("spring", new Integer[] {R.drawable.bonebackground});
-        seasonImages.put("summer", new Integer[] {R.drawable.button_bone});
-        seasonImages.put("autumn", new Integer[] {R.drawable.buttonstone1});
-        seasonImages.put("winter", new Integer[] {R.drawable.buttonstone2});
+        seasonImages.put("spring", new Integer[] {R.drawable.bird,R.drawable.tree,R.drawable.flower,R.drawable.bee});
+        seasonImages.put("summer", new Integer[] {R.drawable.sunglasses,R.drawable.sun,R.drawable.icecream,R.drawable.umbrella});
+        seasonImages.put("autumn", new Integer[] {R.drawable.pumpkin,R.drawable.pine,R.drawable.mushroom,R.drawable.dryleaf});
+        seasonImages.put("winter", new Integer[] {R.drawable.snow,R.drawable.snowman,R.drawable.snowglobe,R.drawable.winterhat});
+
+        lastImage = -1;
 
         // Start game
         startGame();
@@ -44,7 +75,11 @@ public class SeasonsPlayingActivity extends AppCompatActivity {
         Random random = new Random();
         String randomSeason = seasons[random.nextInt(seasons.length)];
         Integer[] images = seasonImages.get(randomSeason);
-        int randomImage = images[random.nextInt(images.length)];
+        int randomImage;
+        do {
+            randomImage = images[random.nextInt(images.length)];
+        } while (randomImage == lastImage);
+        lastImage = randomImage;
 
         seasonImageView.setImageResource(randomImage);
 
@@ -63,6 +98,7 @@ public class SeasonsPlayingActivity extends AppCompatActivity {
         }
 
         final Dialog dialog = new Dialog(this);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.setContentView(R.layout.seasons_dialog_layout);
 
         TextView dialogText = (TextView) dialog.findViewById(R.id.dialog_text);
