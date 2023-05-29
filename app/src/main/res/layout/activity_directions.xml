@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/joystix"
         android:textColor="@color/white"
-        android:text="North"
+        android:text="@string/north"
         android:onClick="clickNorth"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/joystix"
         android:textColor="@color/white"
-        android:text="South"
+        android:text="@string/south"
         android:textSize="30sp"
         android:onClick="clickSouth"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="West"
+        android:text="@string/west"
         android:onClick="clickWest"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,7 +72,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/joystix"
         android:onClick="clickEast"
-        android:text="East"
+        android:text="@string/east"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -80,4 +80,12 @@
         app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+            android:onClick="question_mark"
+            android:background="@drawable/questionmarkbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/question_mark_button"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

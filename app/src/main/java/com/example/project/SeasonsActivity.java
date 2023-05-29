@@ -2,6 +2,7 @@ package com.example.project;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -68,5 +69,11 @@ public class SeasonsActivity extends AppCompatActivity {
                 .into(seasonImageView);
         seasonTextView.setText(seasonNames[currentSeasonIndex]);
         seasonCreditsTextView.setText(seasonCredits[currentSeasonIndex]);
+    }
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.season_dialouge1), getString(R.string.season_dialouge2), getString(R.string.season_dialouge3)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(SeasonsActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }

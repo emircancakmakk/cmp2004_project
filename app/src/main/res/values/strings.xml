@@ -48,5 +48,39 @@
     <string name="season_credit_summer">\@anasabdin</string>
     <string name="season_credit_autumn">\@anasabdin</string>
     <string name="season_credit_winter">Credits for winter gif</string>
+    <string name="learning_time_rex">Learning Time!</string>
+    <string name="months_description">Dive into the world of months and discover each one!</string>
+    <string name="seasons_description">Join a vibrant journey through spring, summer, autumn, and winter!</string>
+    <string name="directions_description">Navigate the world by learning directions!</string>
+    <string name="digits_description">est your memory skills with an exciting digit challenge!</string>
+    <string name="memorise_digits_backward">Memorise Digits Backward</string>
+    <string name="backward_digits_description">Show your memory abilities in this unique backward challenge!</string>
+    <string name="days_dialouge1">Hello, young explorer! Today, we\'re going to learn about the days of the week.
+    </string>
+    <string name="days_dialouge2">Get ready to embark on a counting adventure!</string>
+    <string name="days_dialouge3">We\'ll start from the beginning and go through the days in order. Let\'s dive in!
+    </string>
+    <string name="months_dialouge1">Welcome, curious learner! Today, we\'ll dive into the world of months.</string>
+    <string name="months_dialouge2">Get ready to embark on a journey where we count the months of the year in order.
+    </string>
+    <string name="months_dialouge3">Let\'s explore the twelve months together!</string>
+    <string name="season_dialouge1">Hello, nature enthusiast! It\'s time to learn about the seasons in a fun and
+        engaging way.
+    </string>
+    <string name="season_dialouge2">Through captivating multimedia animations, we\'ll experience the transitions of
+        autumn, fall, summer, and spring.
+    </string>
+    <string name="season_dialouge3">Let\'s discover the joys and changes that each season brings!</string>
+    <string name="north">North</string>
+    <string name="south">South</string>
+    <string name="west">West</string>
+    <string name="east">East</string>
+    <string name="directions_dialouge1">Welcome to DirectionsActivity! Get ready to learn and master the art of
+        directions.
+    </string>
+    <string name="directions_dialouge2">We\'ll explore words like left, right, in front of, and at the back to navigate
+        through different scenarios.
+    </string>
+    <string name="directions_dialouge3">Let\'s begin our exciting journey into the world of directions!</string>
 
 </resources>

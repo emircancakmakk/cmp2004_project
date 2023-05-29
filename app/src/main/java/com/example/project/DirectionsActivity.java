@@ -1,5 +1,6 @@
 package com.example.project;
 
+import android.view.WindowManager;
 import android.widget.FrameLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -68,5 +69,12 @@ public class DirectionsActivity extends AppCompatActivity {
     public void clickEast(View view) {
         mediaPlayer4 = MediaPlayer.create(this, R.raw.east);
         mediaPlayer4.start();
+    }
+
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.directions_dialouge1), getString(R.string.directions_dialouge2), getString(R.string.directions_dialouge3)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(DirectionsActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }

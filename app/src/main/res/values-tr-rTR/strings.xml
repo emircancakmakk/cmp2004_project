@@ -17,27 +17,27 @@
     <string name="d_button1">Pazartesi</string>
     <string name="d_button2">Salı</string>
     <string name="d_button3">Çarşamba</string>
-    <string name="d_button5">Perşembe</string>
-    <string name="d_button4">Cuma</string>
-    <string name="d_button7">Cumartesi</string>
-    <string name="d_button6">Pazar</string>
+    <string name="d_button5">Cuma</string>
+    <string name="d_button4">Perşembe</string>
+    <string name="d_button7">Pazar</string>
+    <string name="d_button6">Cumartesi</string>
     <string name="memorise_digits">Sayıları Ezberleme</string>
     <string name="clock_button">Saat</string>
     <string name="months_button">Aylar</string>
     <string name="days_button">Günler</string>
     <string name="spelling_button">Heceleme</string>
     <string name="directions_Button">Yönler</string>
-    <string name="days_description">Do you want to learn days of the week? Click on the button!!!</string>
-    <string name="main_dialouge1">Hello! I am Rex and I am here to help you! You can continue the dialogue by clicking
-        on me.
+    <string name="days_description">Haftanın günlerini öğrenmek ister misin? Butona tıkla!!!</string>
+    <string name="main_dialouge1">Merhaba! Ben Rex ve sana yardım etmek için buradayım! Bana tıklayarak diyaloğa devam
+        edebilirsin.
     </string>
-    <string name="main_dialouge2">There is two parts in this game, learning and playing.</string>
-    <string name="main_dialouge3">You start with the learning part and learn the concepts! Then put your knowledge to
-        test in playing part while playing mini games!!!
+    <string name="main_dialouge2">Bu oyunda iki bölüm bulunmakta, oyna ve öğren.</string>
+    <string name="main_dialouge3">Öğrenme bölümü ile başla ve kavramları öğren! Daha sonra mini oyunlar oynarken bilgini
+        oyun bölümünde test et!!!
     </string>
-    <string name="main_dialouge_4">You can summon me by pressing the \"?\" button on the top right. Good Luck!</string>
-    <string name="learn_button_text">Learn</string>
-    <string name="play_button_text">Play</string>
+    <string name="main_dialouge_4">sağ üstteki \"?\" düğmesine basarak beni çağırabilirsin. iyi şanslar!</string>
+    <string name="learn_button_text">Öğren</string>
+    <string name="play_button_text">Oyna</string>
     <string name="prev">Geri</string>
     <string name="next">İleri</string>
     <string name="season_name_spring">İlkbahar</string>
@@ -48,4 +48,24 @@
     <string name="season_credit_summer">\@anasabdin</string>
     <string name="season_credit_autumn">\@anasabdin</string>
     <string name="season_credit_winter">\@anasabdin</string>
+    <string name="learning_time_rex">Learning Time!</string>
+    <string name="months_description">Ayların dünyasına dalın ve her birini keşfedin!</string>
+    <string name="seasons_description">İlkbahar, yaz, sonbahar ve kış mevsiminde canlı bir yolculuğa çıkın!</string>
+    <string name="directions_description">Yönleri öğrenerek dünyada gezinin!</string>
+    <string name="digits_description">Heyecan verici bir rakam yarışması ile hafıza becerilerinizi geliştirin!</string>
+    <string name="memorise_digits_backward">Tersten Sayıları Ezberleme</string>
+    <string name="backward_digits_description">Bu benzersiz geriye doğru yarışmada hafıza yeteneklerinizi gösterin!</string>
+    <string name="days_dialouge1">Merhaba, genç kaşif! Bugün haftanın günlerini öğreneceğiz.</string>
+    <string name="days_dialouge2">Günleri saymaca macerasına atılmaya hazır ol!</string>
+    <string name="days_dialouge3">Baştan başlayacağız ve günleri sırayla gözden geçireceğiz. Hadi başlayalım!</string>
+    <string name="months_dialouge1">Hoş geldin meraklı öğrenci! Bugün, ayların dünyasına dalacağız.</string>
+    <string name="months_dialouge2">Yılın aylarını sırayla saydığımız bir yolculuğa çıkmaya hazır ol.</string>
+    <string name="months_dialouge3">On iki ayı birlikte keşfedelim!</string>
+    <string name="season_dialouge1">Merhaba, doğa meraklısı! Mevsimleri eğlenceli ve ilgi çekici bir şekilde öğrenmenin
+        zamanı geldi.
+    </string>
+    <string name="season_dialouge2">Büyüleyici multimedya animasyonları aracılığıyla sonbahar, güz, yaz ve ilkbahar
+        mevsimlerinin değişimini göreceğiz.
+    </string>
+    <string name="season_dialouge3">Hadi, her mevsimin getirdiği neşe ve farklılıkları keşfedelim!</string>
 </resources>

@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        currentLanguage = preferences.getString("language", "eng");
+
         // Dil ayarlarını kontrol et
 
 

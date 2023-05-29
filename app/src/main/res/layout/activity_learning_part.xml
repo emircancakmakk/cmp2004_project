@@ -27,10 +27,10 @@
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Learning Time!"
+                        android:text="@string/learning_time_rex"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="40dp"
+                        android:textSize="35sp"
                         android:layout_marginStart="25dp"
                         android:layout_gravity="center_vertical"/>
             </LinearLayout>
@@ -48,7 +48,7 @@
                         android:fontFamily="@font/joystix"
                         android:text="@string/days_button"
                         android:textColor="@color/white"
-                        android:textSize="25dp"
+                        android:textSize="25sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
@@ -58,7 +58,7 @@
                         android:text="@string/days_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
                         android:layout_gravity="center_vertical"/>
             </LinearLayout>
@@ -75,17 +75,17 @@
                         android:fontFamily="@font/joystix"
                         android:text="@string/months_button"
                         android:textColor="@color/white"
-                        android:textSize="25dp"
+                        android:textSize="25sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seasons description"
+                        android:text="@string/months_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="30dp"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
                         android:layout_gravity="center_vertical"/>
             </LinearLayout>
@@ -103,7 +103,7 @@
                         android:fontFamily="@font/joystix"
                         android:text="@string/season_button"
                         android:textColor="@color/white"
-                        android:textSize="25dp"
+                        android:textSize="25sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp"
@@ -112,12 +112,11 @@
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seasons description"
+                        android:text="@string/seasons_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="30sp"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
-
                         android:layout_gravity="center_vertical"/>
 
             </LinearLayout>
@@ -136,17 +135,17 @@
                         android:fontFamily="@font/joystix"
                         android:text="@string/directions_Button"
                         android:textColor="@color/white"
-                        android:textSize="30dp"
+                        android:textSize="30sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seasons description"
+                        android:text="@string/directions_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="30dp"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
                         android:layout_gravity="center_vertical"/>
             </LinearLayout>
@@ -164,17 +163,17 @@
                         android:fontFamily="@font/joystix"
                         android:text="@string/memorise_digits"
                         android:textColor="@color/white"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seasons description"
+                        android:text="@string/digits_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="30dp"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
                         android:layout_gravity="center_vertical"/>
             </LinearLayout>
@@ -189,19 +188,19 @@
                         android:layout_height="160dp"
                         android:background="@drawable/brainlogobackward"
                         android:fontFamily="@font/joystix"
-                        android:text="Memorise Digits Backward"
+                        android:text="@string/memorise_digits_backward"
                         android:textColor="@color/white"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:paddingTop="0dp"
                         android:paddingBottom="25dp"
                         android:layout_marginTop="25dp" android:layout_marginStart="25dp"/>
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seasons description"
+                        android:text="@string/backward_digits_description"
                         android:fontFamily="@font/joystix"
                         android:textColor="@color/white"
-                        android:textSize="30dp"
+                        android:textSize="20sp"
                         android:layout_marginStart="25dp"
                         android:layout_gravity="center_vertical"/>
             </LinearLayout>

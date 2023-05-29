@@ -1,5 +1,6 @@
 package com.example.project;
 
+import android.view.WindowManager;
 import android.widget.FrameLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -79,5 +80,11 @@ public class MonthsActivity extends AppCompatActivity {
 
         // Set the FrameLayout as the content view
         setContentView(rootLayout);
+    }
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.months_dialouge1), getString(R.string.months_dialouge2), getString(R.string.months_dialouge3)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(MonthsActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }

@@ -53,5 +53,11 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:textSize="10sp" />
+    <ImageButton
+            android:onClick="question_mark"
+            android:background="@drawable/questionmarkbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/question_mark_button"
+            android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>

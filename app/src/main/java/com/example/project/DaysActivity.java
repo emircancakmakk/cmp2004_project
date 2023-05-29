@@ -1,5 +1,6 @@
 package com.example.project;
 
+import android.view.WindowManager;
 import android.widget.FrameLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -106,5 +107,11 @@ public class DaysActivity extends AppCompatActivity {
                 mediaPlayer7.start();
             }
         });
+    }
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.days_dialouge1), getString(R.string.days_dialouge2), getString(R.string.days_dialouge3)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(DaysActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }
