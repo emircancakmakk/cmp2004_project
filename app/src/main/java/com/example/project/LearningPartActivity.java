@@ -28,7 +28,7 @@ public class LearningPartActivity extends AppCompatActivity {
         }
 
         // Load the tile from your drawable resources
-        Bitmap tileBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.fossil);
+        Bitmap tileBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ground);
         BitmapDrawable tileDrawable = new BitmapDrawable(getResources(), tileBitmap);
 
         // Set the drawable to tile
