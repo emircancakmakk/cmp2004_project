@@ -1,7 +1,6 @@
 package com.example.project;
 
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -10,35 +9,35 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PlayDaysActivity extends AppCompatActivity implements View.OnClickListener {
+public class PlayMonthsActivity extends AppCompatActivity implements View.OnClickListener {
 
     private String[] questions = {
-            "How many days are there in a week?",
-            "Which is the first day of the week?",
-            "Which is the last day of the week?",
-            "Which days belong to weekdays?",
-            "Which days belong to the weekend?",
-            "Which days are considered weekend holidays?",
-            "Which days require going to school?",
-            "Which days have more time to relax at home?",
-            "Which days are in the middle of the week?",
-            "Which days are working days?"
+            "Which month comes after January?",
+            "Which month has 28 or 29 days in a leap year?",
+            "Which month is the tenth month of the year?",
+            "Which month has 31 days?",
+            "Which month is the first month of the year?",
+            "Which month is known for being the hottest in the Northern Hemisphere?",
+            "Which month is associated with Halloween?",
+            "Which month is associated with Thanksgiving in the United States?",
+            "Which month is known for having the longest day in the Northern Hemisphere?",
+            "Which month marks the beginning of spring in the Northern Hemisphere?"
     };
 
     private String[][] options = {
-            {"5", "6", "7"},
-            {"Sunday", "Monday", "Saturday"},
-            {"Sunday", "Saturday", "Monday"},
-            {"Monday, Tuesday, Wednesday, Thursday, Friday", "Tuesday, Wednesday, Thursday, Friday, Saturday", "Wednesday, Thursday, Friday, Saturday, Sunday"},
-            {"Saturday, Sunday", "Sunday, Monday", "Monday, Tuesday"},
-            {"Saturday, Sunday", "Monday, Tuesday", "Tuesday, Wednesday"},
-            {"Monday, Tuesday, Wednesday, Thursday, Friday", "Tuesday, Wednesday, Thursday, Friday, Saturday", "Wednesday, Thursday, Friday, Saturday, Sunday"},
-            {"Tuesday, Wednesday", "Saturday, Sunday", "Wednesday, Thursday"},
-            {"Thursday", "Wednesday", "Friday"},
-            {"Monday, Tuesday, Wednesday, Thursday, Friday", "Saturday, Sunday", "Sunday, Monday"}
+            {"February", "March", "April"},
+            {"February", "March", "December"},
+            {"October", "November", "September"},
+            {"January", "March", "May"},
+            {"January", "February", "December"},
+            {"July", "August", "September"},
+            {"October", "November", "December"},
+            {"November", "December", "October"},
+            {"June", "July", "August"},
+            {"March", "April", "May"}
     };
 
-    private int[] correctAnswers = {2, 1, 0, 0, 0, 0, 0, 1, 1, 0};
+    private int[] correctAnswers = {0, 0, 2, 2, 0, 1, 2, 0, 2, 0};
 
     private ProgressBar progressBar;
     private TextView textViewQuestion;
@@ -51,7 +50,7 @@ public class PlayDaysActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_play_days);
+        setContentView(R.layout.activity_play_months);
 
         progressBar = findViewById(R.id.progressBar);
         textViewQuestion = findViewById(R.id.textViewQuestion);

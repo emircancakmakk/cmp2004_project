@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Project</string>
+    <string name="m_button1">Ocak</string>
+    <string name="m_button2">Şubat</string>
+    <string name="m_button3">Mart</string>
+    <string name="m_button4">Nisan</string>
+    <string name="m_button5">Mayıs</string>
+    <string name="m_button6">Haziran</string>
+    <string name="m_button7">Temmuz</string>
+    <string name="m_button8">Ağustos</string>
+    <string name="m_button9">Eylül</string>
+    <string name="m_button10">Ekim</string>
+    <string name="m_button11">Kasım</string>
+    <string name="m_button12">Aralık</string>
     <string name="season_button">Mevsimler</string>
     <string name="d_button1">Pazartesi</string>
     <string name="d_button2">Salı</string>

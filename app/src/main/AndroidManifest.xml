@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
+            android:name=".DirectionsGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlayMonthsActivity"
+            android:exported="false" />
+        <activity
             android:name=".PlayDaysActivity"
             android:exported="false" />
         <activity
