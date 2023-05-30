@@ -3,6 +3,7 @@ package com.example.project;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -178,4 +179,12 @@ public class DigitForwardActivity extends AppCompatActivity {
             handler.removeCallbacks(displayRunnable);
         }
     }
+
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.digits_dialouge1), getString(R.string.digits_dialouge2)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(DigitForwardActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
+    }
+
 }

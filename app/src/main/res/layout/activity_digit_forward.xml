@@ -6,7 +6,12 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".DigitForwardActivity">
-
+    <ImageButton
+            android:onClick="question_mark"
+            android:background="@drawable/questionmarkbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/question_mark_button"
+            android:layout_gravity="end"/>
     <TextView
             android:id="@+id/numberTextView"
             android:layout_width="wrap_content"
@@ -23,8 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/joystix"
-            android:textColor="@color/black"
-            android:hint="Enter the numbers in order"
+            android:textColor="@color/white"
+            android:hint="@string/digit_forward_prompt"
             android:textSize="12sp"
             android:inputType="number"
             android:layout_marginBottom="16dp" />
@@ -35,7 +40,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bone_button_states"
             android:fontFamily="@font/joystix"
-            android:text="Start"
+            android:text="@string/start"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:paddingTop="0dp"
@@ -49,7 +54,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bone_button_states"
             android:fontFamily="@font/joystix"
-            android:text="Submit"
+            android:text="@string/submit"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:paddingTop="0dp"
@@ -63,7 +68,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bone_button_states"
             android:fontFamily="@font/joystix"
-            android:text="Restart"
+            android:text="@string/restart"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:paddingTop="0dp"

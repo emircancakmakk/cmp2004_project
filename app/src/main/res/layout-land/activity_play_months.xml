@@ -49,51 +49,57 @@
             android:textStyle="bold" android:layout_centerInParent="true"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/progressBar">
-        <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonAnswer1"
-                android:layout_width="wrap_content"
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="219dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/sign_button_states"
-                android:fontFamily="@font/joystix"
-                android:text="@string/d_button1"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                android:paddingTop="0dp"
-        />
-        <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonAnswer2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/sign_button_states"
-                android:fontFamily="@font/joystix"
-                android:text="@string/d_button1"
-                android:textColor="@color/white"
-                android:layout_marginTop="10dp"
+        >
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/sign_button_states"
+                    android:fontFamily="@font/joystix"
+                    android:text="@string/d_button1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:paddingTop="0dp"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/sign_button_states"
+                    android:fontFamily="@font/joystix"
+                    android:text="@string/d_button1"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
 
-                android:textSize="15sp"
-                android:paddingTop="0dp"
-        />
-        <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonAnswer3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/sign_button_states"
-                android:fontFamily="@font/joystix"
-                android:text="@string/d_button1"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                android:layout_marginTop="10dp"
-                android:paddingTop="0dp"
-        />
-    </LinearLayout>
+                    android:textSize="15sp"
+                    android:paddingTop="0dp"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/sign_button_states"
+                    android:fontFamily="@font/joystix"
+                    android:text="@string/d_button1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="0dp"
+            />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

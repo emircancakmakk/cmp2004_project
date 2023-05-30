@@ -48,7 +48,7 @@
     <string name="season_credit_summer">\@anasabdin</string>
     <string name="season_credit_autumn">\@anasabdin</string>
     <string name="season_credit_winter">\@anasabdin</string>
-    <string name="learning_time_rex">Learning Time!</string>
+    <string name="learning_time_rex">Öğrenme Zamanı!</string>
     <string name="months_description">Ayların dünyasına dalın ve her birini keşfedin!</string>
     <string name="seasons_description">İlkbahar, yaz, sonbahar ve kış mevsiminde canlı bir yolculuğa çıkın!</string>
     <string name="directions_description">Yönleri öğrenerek dünyada gezinin!</string>
@@ -68,4 +68,177 @@
         mevsimlerinin değişimini göreceğiz.
     </string>
     <string name="season_dialouge3">Hadi, her mevsimin getirdiği neşe ve farklılıkları keşfedelim!</string>
+    <string name="north">Kuzey</string>
+    <string name="south">Güney</string>
+    <string name="west">Batı</string>
+    <string name="east">Doğu</string>
+    <string name="directions_dialouge1">Hoş geldin, hoş geldin! Yepyeni ve parlak pusulama bir bak ve yön bulma
+        sanatında ustalaş.
+    </string>
+    <string name="directions_dialouge2">Telaffuzunu duymak için yönlerin üzerine tıklayabilirsin!</string>
+    <!-- Seçenekler -->
+    <string name="directions_dialouge3">Yönler dünyasına doğru heyecan verici yolculuğumuza başlayalım!</string>
+    <string name="digits_dialouge1">Rakam hafızası mücadelesine hazır ol! Rakamlar ekranda kendilerini gösterirken
+        dikkatlice izle.
+    </string>
+    <string name="digits_dialouge2">Görevin her bir rakamı tam olarak göründükleri sırada hatırlamak. Fantastik hafıza
+        becerilerini göstermeye hazır mısın?
+    </string>
+    <string name="digits_backward_dialouge1">Geri, geri! Rakamlar ortaya çıkarken yakından izle. Onları dikkatlice
+        ezberle, ama bu sefer geriye doğru gidiyoruz.
+    </string>
+    <string name="digits_backward_dialouge2">Bu eşi benzeri olmayan bir hafıza mücadelesi. Bana inanılmaz hafızazanın ne
+        kadar ensek olduğunu göster!
+    </string>
+    <string name="days_question1">Bir haftada kaç gün vardır?</string>
+    <string name="days_question2">Haftanın ilk günü hangisidir?</string>
+    <string name="days_question3">Haftanın son günü hangisidir?</string>
+    <string name="days_question4">Hangi günler hafta içine aittir?</string>
+    <string name="days_question5">Hangi günler hafta sonuna aittir?</string>
+    <string name="days_question6">Hangi günler hafta sonu tatili olarak kabul edilir?</string>
+    <string name="days_question7">Hangi günler okula gitmeniz gerekiyor?</string>
+    <string name="days_question8">Hangi günler evde dinlenmek için daha fazla zamanınız var?</string>
+    <string name="days_question9">Hangi günler haftanın ortasındadır?</string>
+    <string name="days_question10">Hangi günler iş günüdür?</string>
+    <string name="days_option_1_1">5</string>
+    <string name="days_option_1_2">6</string>
+    <string name="days_option_1_3">7</string>
+
+    <string name="days_option_2_1">Pazar</string>
+    <string name="days_option_2_2">Pazartesi</string>
+    <string name="days_option_2_3">Cumartesi</string>
+
+    <string name="days_option_3_1">Pazar</string>
+    <string name="days_option_3_2">Cumartesi</string>
+    <string name="days_option_3_3">Pazartesi</string>
+
+    <string name="days_option_4_1">Pazartesi, Salı, Çarşamba, Perşembe, Cuma</string>
+    <string name="days_option_4_2">Salı, Çarşamba, Perşembe, Cuma, Cumartesi</string>
+    <string name="days_option_4_3">Çarşamba, Perşembe, Cuma, Cumartesi, Pazar</string>
+
+    <string name="days_option_5_1">Cumartesi, Pazar</string>
+    <string name="days_option_5_2">Pazar, Pazartesi</string>
+    <string name="days_option_5_3">Pazartesi, Salı</string>
+
+    <string name="days_option_6_1">Cumartesi, Pazar</string>
+    <string name="days_option_6_2">Pazartesi, Salı</string>
+    <string name="days_option_6_3">Salı, Çarşamba</string>
+
+    <string name="days_option_7_1">Pazartesi, Salı, Çarşamba, Perşembe, Cuma</string>
+    <string name="days_option_7_2">Salı, Çarşamba, Perşembe, Cuma, Cumartesi</string>
+    <string name="days_option_7_3">Çarşamba, Perşembe, Cuma, Cumartesi, Pazar</string>
+
+    <string name="days_option_8_1">Salı, Çarşamba</string>
+    <string name="days_option_8_2">Cumartesi, Pazar</string>
+    <string name="days_option_8_3">Çarşamba, Perşembe</string>
+
+    <string name="days_option_9_1">Perşembe</string>
+    <string name="days_option_9_2">Çarşamba</string>
+    <string name="days_option_9_3">Cuma</string>
+
+    <string name="days_option_10_1">Pazartesi, Salı, Çarşamba, Perşembe, Cuma</string>
+    <string name="days_option_10_2">Cumartesi, Pazar</string>
+    <string name="days_option_10_3">Pazar, Pazartesi</string>
+
+    <!-- Questions -->
+    <string name="play_days_dialouge_1">Haftanın günlerinde eğlenceli bir yolculuğa hazır olun! Birlikte, pazartesiden
+        başlayarak pazara kadar sırayla saymayı öğreneceğiz.
+    </string>
+    <string name="play_days_dialouge_2">Her günün kendine has özelliklerini ve bizi bekleyen maceraları keşfedeceğiz.
+    </string>
+    <string name="play_days_dialouge_3">Haydi bu eğlence dolu öğrenme deneyimine başlayalım!</string>
+    <string name="play_months_dialouge_1">Yılın aylarını eğlenceli ve interaktif bir şekilde öğrenmeye hazır mısınız?
+    </string>
+    <string name="play_months_dialouge_2">Bir test ile ayları gözden geçireceğiz, doğru cevabı seçmeye çalışacağız.
+    </string>
+    <string name="play_months_dialouge_3">Doğru cevaplar için +1 puan Yanlış cevaplar için -1 puan!</string>
+    <string name="play_months_dialouge_4">On iki ay yolculuğumuza başlayalım!</string>
+    <string name="months_question_1">Ocak\'tan sonra hangi ay gelir?</string>
+    <string name="months_question_2">Hangi ay artık yılda 28 veya 29 gün içerir?</string>
+    <string name="months_question_3">Hangi ay yılın onuncu ayıdır?</string>
+    <string name="months_question_4">Hangi ayın 31 günü vardır?</string>
+    <string name="months_question_5">Yılın ilk ayı hangisidir?</string>
+    <string name="months_question_6">Kuzey Yarımküre\'de en sıcak olan ay hangisidir?</string>
+    <string name="months_question_7">Hangi ay Cadılar Bayramı ile ilişkilendirilir?</string>
+    <string name="months_question_8">Hangi ay Amerika Birleşik Devletleri\'nde Şükran Günü ile ilişkilendirilir?</string>
+    <string name="months_question_9">Kuzey Yarımküre\'de en uzun günü olan ay hangisidir?</string>
+    <string name="months_question_10">Kuzey Yarımküre\'de ilkbaharın başlangıcını işaret eden ay hangisidir?</string>
+
+    <!-- Options -->
+    <string name="months_option_1_1">Şubat</string>
+    <string name="months_option_1_2">Mart</string>
+    <string name="months_option_1_3">Nisan</string>
+    <string name="months_option_2_1">Şubat</string>
+    <string name="months_option_2_2">Mart</string>
+    <string name="months_option_2_3">Aralık</string>
+    <string name="months_option_3_1">Ekim</string>
+    <string name="months_option_3_2">Kasım</string>
+    <string name="months_option_3_3">Eylül</string>
+    <string name="months_option_4_1">Ocak</string>
+    <string name="months_option_4_2">Mart</string>
+    <string name="months_option_4_3">Mayıs</string>
+    <string name="months_option_5_1">Ocak</string>
+    <string name="months_option_5_2">Şubat</string>
+    <string name="months_option_5_3">Aralık</string>
+    <string name="months_option_6_1">Temmuz</string>
+    <string name="months_option_6_2">Ağustos</string>
+    <string name="months_option_6_3">Eylül</string>
+    <string name="months_option_7_1">Ekim</string>
+    <string name="months_option_7_2">Kasım</string>
+    <string name="months_option_7_3">Aralık</string>
+    <string name="months_option_8_1">Kasım</string>
+    <string name="months_option_8_2">Aralık</string>
+    <string name="months_option_8_3">Ekim</string>
+    <string name="months_option_9_1">Haziran</string>
+    <string name="months_option_9_2">Temmuz</string>
+    <string name="months_option_9_3">Ağustos</string>
+    <string name="months_option_10_1">Mart</string>
+    <string name="months_option_10_2">Nisan</string>
+    <string name="months_option_10_3">Mayıs</string>
+    <string name="playing_time">Oyun zamanı!</string>
+    <string name="play_months_description">Eğlenceli bir test ile yılın aylarını öğrenin!</string>
+    <string name="play_days_description">Her günü bir test aracılığıyla keşfedin!</string>
+    <string name="play_seasons_description">Doğru öğeyi mevsimlerle eşleştirin!</string>
+    <string name="multiplication_button">Çarpma İşlemi</string>
+    <string name="multiplication_description">Çarpma işleminin sırlarını keşfedin ve bir usta olun!</string>
+    <string name="follow_egg_button">Yumurtayı Takip Et</string>
+    <string name="egg_description">Güçlü göz kaslarına sahip ol!</string>
+    <string name="playing_directions_description">Bu heyecan verici oyunda yön bulma konusunda bir profesyonel olun!
+    </string>
+    <string name="season_playing_dialouge1">Merhaba, doğa meraklısı! Mevsimler hakkındaki bilgini eğlenceli ve ilgi
+        çekici bir şekilde test etme zamanı.
+    </string>
+    <string name="season_playing_dialouge2">Büyüleyici bir görüntü gösterilecek ve sen de doğru mevsimi seçmelisin.
+    </string>
+    <string name="season_playing_dialouge3">Her mevsimin getirdiği keyifleri ve değişiklikleri keşfedelim!</string>
+    <string name="check_answer_invalid_text">Lütfen bir cevap verin</string>
+    <string name="check_answer_correct">Doğru!</string>
+    <string name="check_answer_incorrect">Yanlış!</string>
+    <string name="multilication_dialouge1">Bir çarpma ustası olmaya hazır mısınız?</string>
+    <string name="multilication_dialouge2">Sayıları çarpmanın sırlarını ortaya çıkarmak üzereyiz.</string>
+    <string name="multilication_dialouge3">İyi şanslar!!!</string>
+    <string name="enter_your_answer">Cevabınızı girin</string>
+    <string name="start">Başla</string>
+    <string name="retry">Tekrar</string>
+    <string name="submit">Gönder</string>
+    <string name="ball_dialouge1">Tekrar hoş geldin, maceracı! Göz kaslarını çalıştırmaya hazır ol!!!!!</string>
+    <string name="ball_dialouge2">Yumurtam vahşice zıplamaya başladı. Senin görevin onun her hareketini takip etmek.
+    </string>
+    <string name="ball_dialouge3">Gözünüzü dört aç ve odaklanmaya devam et!</string>
+    <string name="ball_dialouge4">Bakalım yumurtanın öngörülemeyen yoluna ayak uydurabilecek misin? İyi şanslar!
+    </string>
+    <string name="direcitons_playing_dialouge1">Yumurtamı kaybettim!!! Hayırrrr, onu bulmalıyım.</string>
+    <string name="directions_playing_dialouge2">Yumurtanın bana göre nerede olduğunu söyleyerek bana yardımcı
+        olmalısın.
+    </string>
+    <string name="digit_backward_prompt">Sayıları ters sıra ile yazın</string>
+    <string name="restart">Sıfırla</string>
+    <string name="digit_forward_prompt">Sayıları sırası ile yazın</string>
+    <string name="direction_playing_question">Rex nereye bakıyor?</string>
+    <string name="correct">DOĞRU!</string>
+    <string name="too_bad">"Ne yazıkki doğru cevap "</string>
+    <string name="spring">İlkbahar</string>
+    <string name="summer">Yaz</string>
+    <string name="autumn">Sonbahar</string>
+    <string name="winter">Kış</string>
 </resources>

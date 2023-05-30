@@ -3,36 +3,37 @@ package com.example.project;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PlayDaysActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private String[] questions = {
-            "How many days are there in a week?",
-            "Which is the first day of the week?",
-            "Which is the last day of the week?",
-            "Which days belong to weekdays?",
-            "Which days belong to the weekend?",
-            "Which days are considered weekend holidays?",
-            "Which days require going to school?",
-            "Which days have more time to relax at home?",
-            "Which days are in the middle of the week?",
-            "Which days are working days?"
+    private int[] questions = {
+            R.string.days_question1,
+            R.string.days_question2,
+            R.string.days_question3,
+            R.string.days_question4,
+            R.string.days_question5,
+            R.string.days_question6,
+            R.string.days_question7,
+            R.string.days_question8,
+            R.string.days_question9,
+            R.string.days_question10
     };
 
-    private String[][] options = {
-            {"5", "6", "7"},
-            {"Sunday", "Monday", "Saturday"},
-            {"Sunday", "Saturday", "Monday"},
-            {"Monday, Tuesday, Wednesday, Thursday, Friday", "Tuesday, Wednesday, Thursday, Friday, Saturday", "Wednesday, Thursday, Friday, Saturday, Sunday"},
-            {"Saturday, Sunday", "Sunday, Monday", "Monday, Tuesday"},
-            {"Saturday, Sunday", "Monday, Tuesday", "Tuesday, Wednesday"},
-            {"Monday, Tuesday, Wednesday, Thursday, Friday", "Tuesday, Wednesday, Thursday, Friday, Saturday", "Wednesday, Thursday, Friday, Saturday, Sunday"},
-            {"Tuesday, Wednesday", "Saturday, Sunday", "Wednesday, Thursday"},
-            {"Thursday", "Wednesday", "Friday"},
-            {"Monday, Tuesday, Wednesday, Thursday, Friday", "Saturday, Sunday", "Sunday, Monday"}
+    private int[][] options = {
+            {R.string.days_option_1_1, R.string.days_option_1_2, R.string.days_option_1_3},
+            {R.string.days_option_2_1, R.string.days_option_2_2, R.string.days_option_2_3},
+            {R.string.days_option_3_1, R.string.days_option_3_2, R.string.days_option_3_3},
+            {R.string.days_option_4_1, R.string.days_option_4_2, R.string.days_option_4_3},
+            {R.string.days_option_5_1, R.string.days_option_5_2, R.string.days_option_5_3},
+            {R.string.days_option_6_1, R.string.days_option_6_2, R.string.days_option_6_3},
+            {R.string.days_option_7_1, R.string.days_option_7_2, R.string.days_option_7_3},
+            {R.string.days_option_8_1, R.string.days_option_8_2, R.string.days_option_8_3},
+            {R.string.days_option_9_1, R.string.days_option_9_2, R.string.days_option_9_3},
+            {R.string.days_option_10_1, R.string.days_option_10_2, R.string.days_option_10_3}
     };
 
     private int[] correctAnswers = {2, 1, 0, 0, 0, 0, 0, 1, 1, 0};
@@ -143,5 +144,11 @@ public class PlayDaysActivity extends AppCompatActivity implements View.OnClickL
         textViewScore.setText("Score: 0");
         progressBar.setProgress(0);
         updateQuestion();
+    }
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.play_days_dialouge_1), getString(R.string.play_days_dialouge_2),getString(R.string.play_days_dialouge_3)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(PlayDaysActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }

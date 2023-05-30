@@ -25,9 +25,8 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/linearLayout3">
         <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
             <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/buttonNorth"
                     android:onClick="OpenLearningPart"
@@ -54,10 +53,6 @@
                     android:textSize="16sp"
                     android:paddingTop="0dp"
                     android:paddingBottom="25dp"/>
-        </LinearLayout>
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
             <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/buttonEast"
                     android:onClick="OpenLearningPart"
@@ -96,7 +91,7 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" android:layout_marginTop="32dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout3"/>
-
+    
     <ImageButton
             android:onClick="question_mark"
             android:background="@drawable/questionmarkbutton"

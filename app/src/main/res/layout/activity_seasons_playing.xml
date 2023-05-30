@@ -30,7 +30,7 @@
                 android:layout_height="84dp"
                 android:background="@drawable/button_states"
                 android:fontFamily="@font/joystix"
-                android:text="Summer"
+                android:text="@string/summer"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:paddingTop="0dp"
@@ -43,7 +43,7 @@
                 android:layout_height="84dp"
                 android:background="@drawable/button_states"
                 android:fontFamily="@font/joystix"
-                android:text="Spring"
+                android:text="@string/spring"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:paddingTop="0dp"
@@ -63,7 +63,7 @@
                 android:layout_height="84dp"
                 android:background="@drawable/button_states"
                 android:fontFamily="@font/joystix"
-                android:text="Autumn"
+                android:text="@string/autumn"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:paddingTop="0dp"
@@ -76,12 +76,17 @@
                 android:layout_height="84dp"
                 android:background="@drawable/button_states"
                 android:fontFamily="@font/joystix"
-                android:text="Winter"
+                android:text="@string/winter"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:paddingTop="0dp"
                 android:paddingBottom="25dp"
         />
     </LinearLayout>
-
+    <ImageButton
+            android:onClick="question_mark"
+            android:background="@drawable/questionmarkbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/question_mark_button"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

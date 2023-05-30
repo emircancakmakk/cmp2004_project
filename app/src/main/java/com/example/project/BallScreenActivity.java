@@ -7,6 +7,7 @@ import android.graphics.Shader;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -49,5 +50,11 @@ public class BallScreenActivity extends Activity {
     protected void onPause() {
         super.onPause();
         gameSurface.pause();
+    }
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.ball_dialouge1), getString(R.string.ball_dialouge2), getString(R.string.ball_dialouge3),getString(R.string.ball_dialouge4)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(BallScreenActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }
