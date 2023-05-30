@@ -120,12 +120,20 @@ public class DigitForwardActivity extends AppCompatActivity {
                     int number = numberSequence.get(currentIndex);
                     numberTextView.setText(String.valueOf(number));
                     currentIndex++;
-                    handler.postDelayed(this, 1000); // Display each number for 1 second
-                } else {
-                    numberTextView.setText("");
-                    userInputEditText.setEnabled(true);
-                    submitButton.setEnabled(true);
-                    restartButton.setEnabled(true);
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            numberTextView.setText(""); // Add a blank "pause" after each number
+                        }
+                    }, 1000); // Display the blank "pause" for 1 second
+
+                    if (currentIndex < numberSequence.size()) {
+                        handler.postDelayed(this, 2000); // Display the next number after 2 seconds, taking into account the "pause"
+                    } else {
+                        userInputEditText.setEnabled(true);
+                        submitButton.setEnabled(true);
+                        restartButton.setEnabled(true);
+                    }
                 }
             }
         };
