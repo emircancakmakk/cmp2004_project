@@ -97,10 +97,12 @@ public class DirectionsGameActivity extends AppCompatActivity implements View.On
     private void checkAnswer(String chosenAnswer) {
         int currentImageIndex = getCurrentImageIndex();
         String message;
-        if (chosenAnswer.equals(correctAnswers[currentImageIndex])) {
+        String correctAnswer = getString(correctAnswers[currentImageIndex]); // Convert resource ID to string
+
+        if (chosenAnswer.equals(correctAnswer)) {
             message = getString(R.string.correct);
         } else {
-            message = getString(R.string.too_bad) + getString(correctAnswers[currentImageIndex]);
+            message = getString(R.string.too_bad) + correctAnswer;
         }
 
         final Dialog dialog = new Dialog(this);
@@ -148,16 +150,16 @@ public class DirectionsGameActivity extends AppCompatActivity implements View.On
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.buttonNorth:
-                checkAnswer("North");
+                checkAnswer(getString(R.string.north));
                 break;
             case R.id.buttonWest:
-                checkAnswer("West");
+                checkAnswer(getString(R.string.west));
                 break;
             case R.id.buttonEast:
-                checkAnswer("East");
+                checkAnswer(getString(R.string.south));
                 break;
             case R.id.buttonSouth:
-                checkAnswer("South");
+                checkAnswer(getString(R.string.east));
                 break;
         }
     }
