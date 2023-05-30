@@ -24,14 +24,14 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
     private static final String PREF_QUESTION_MARK_CALLED = "question_mark_called";
 
-    private String currentLanguage = "eng"; // Başlangıç dilini burada belirleyin
+    private String currentLanguage = "en"; // Başlangıç dilini burada belirleyin
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        currentLanguage = preferences.getString("language", "eng");
+        currentLanguage = preferences.getString("language", "en");
 
         // Dil ayarlarını kontrol et
 

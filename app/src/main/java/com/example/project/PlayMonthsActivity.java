@@ -2,37 +2,39 @@ package com.example.project;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PlayMonthsActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private String[] questions = {
-            "Which month comes after January?",
-            "Which month has 28 or 29 days in a leap year?",
-            "Which month is the tenth month of the year?",
-            "Which month has 31 days?",
-            "Which month is the first month of the year?",
-            "Which month is known for being the hottest in the Northern Hemisphere?",
-            "Which month is associated with Halloween?",
-            "Which month is associated with Thanksgiving in the United States?",
-            "Which month is known for having the longest day in the Northern Hemisphere?",
-            "Which month marks the beginning of spring in the Northern Hemisphere?"
+    private int[] questions = {
+            R.string.months_question_1,
+            R.string.months_question_2,
+            R.string.months_question_3,
+            R.string.months_question_4,
+            R.string.months_question_5,
+            R.string.months_question_6,
+            R.string.months_question_7,
+            R.string.months_question_8,
+            R.string.months_question_9,
+            R.string.months_question_10
     };
 
-    private String[][] options = {
-            {"February", "March", "April"},
-            {"February", "March", "December"},
-            {"October", "November", "September"},
-            {"January", "March", "May"},
-            {"January", "February", "December"},
-            {"July", "August", "September"},
-            {"October", "November", "December"},
-            {"November", "December", "October"},
-            {"June", "July", "August"},
-            {"March", "April", "May"}
+    private int[][] options = {
+            {R.string.months_option_1_1, R.string.months_option_1_2, R.string.months_option_1_3},
+            {R.string.months_option_2_1, R.string.months_option_2_2, R.string.months_option_2_3},
+            {R.string.months_option_3_1, R.string.months_option_3_2, R.string.months_option_3_3},
+            {R.string.months_option_4_1, R.string.months_option_4_2, R.string.months_option_4_3},
+            {R.string.months_option_5_1, R.string.months_option_5_2, R.string.months_option_5_3},
+            {R.string.months_option_6_1, R.string.months_option_6_2, R.string.months_option_6_3},
+            {R.string.months_option_7_1, R.string.months_option_7_2, R.string.months_option_7_3},
+            {R.string.months_option_8_1, R.string.months_option_8_2, R.string.months_option_8_3},
+            {R.string.months_option_9_1, R.string.months_option_9_2, R.string.months_option_9_3},
+            {R.string.months_option_10_1, R.string.months_option_10_2, R.string.months_option_10_3}
     };
+
 
     private int[] correctAnswers = {0, 0, 2, 2, 0, 1, 2, 0, 2, 0};
 
@@ -142,5 +144,11 @@ public class PlayMonthsActivity extends AppCompatActivity implements View.OnClic
         textViewScore.setText("Score: 0");
         progressBar.setProgress(0);
         updateQuestion();
+    }
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.play_months_dialouge_1), getString(R.string.play_months_dialouge_2),getString(R.string.play_months_dialouge_3),getString(R.string.play_months_dialouge_4)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(PlayMonthsActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }

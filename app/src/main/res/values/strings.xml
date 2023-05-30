@@ -75,12 +75,175 @@
     <string name="south">South</string>
     <string name="west">West</string>
     <string name="east">East</string>
-    <string name="directions_dialouge1">Welcome to DirectionsActivity! Get ready to learn and master the art of
+    <string name="directions_dialouge1">Welcome, welcome! Look at my brand new and shiny compass and master the art of
         directions.
     </string>
-    <string name="directions_dialouge2">We\'ll explore words like left, right, in front of, and at the back to navigate
-        through different scenarios.
-    </string>
+    <string name="directions_dialouge2">You may click on the directions to hear the pronunciation.</string>
     <string name="directions_dialouge3">Let\'s begin our exciting journey into the world of directions!</string>
+    <string name="digits_dialouge1">Get ready for a digit memory challenge! Watch closely as the numbers unveil
+        themselves on the screen.
+    </string>
+    <string name="digits_dialouge2">Your mission is to remember each digit in the exact order they appeared. Ready to
+        showcase your fantastic memory skills?
+    </string>
+    <string name="digits_backward_dialouge1">Reverse, reverse! Watch closely as the digits make their appearance.
+        Remember them carefully, but this time, we\'re going backward.
+    </string>
+    <string name="digits_backward_dialouge2">It\'s a memory challenge like no other. Show us your incredible memory
+        abilities!
+    </string>
+    <string name="days_question1">How many days are there in a week?</string>
+    <string name="days_question2">Which is the first day of the week?</string>
+    <string name="days_question3">Which is the last day of the week?</string>
+    <string name="days_question4">Which days belong to weekdays?</string>
+    <string name="days_question5">Which days belong to the weekend?</string>
+    <string name="days_question6">Which days are considered weekend holidays?</string>
+    <string name="days_question7">Which days require going to school?</string>
+    <string name="days_question8">Which days have more time to relax at home?</string>
+    <string name="days_question9">Which days are in the middle of the week?</string>
+    <string name="days_question10">Which days are working days?</string>
 
+    <!-- Options -->
+    <string name="days_option_1_1">5</string>
+    <string name="days_option_1_2">6</string>
+    <string name="days_option_1_3">7</string>
+
+    <string name="days_option_2_1">Sunday</string>
+    <string name="days_option_2_2">Monday</string>
+    <string name="days_option_2_3">Saturday</string>
+
+    <string name="days_option_3_1">Sunday</string>
+    <string name="days_option_3_2">Saturday</string>
+    <string name="days_option_3_3">Monday</string>
+
+    <string name="days_option_4_1">Monday, Tuesday, Wednesday, Thursday, Friday</string>
+    <string name="days_option_4_2">Tuesday, Wednesday, Thursday, Friday, Saturday</string>
+    <string name="days_option_4_3">Wednesday, Thursday, Friday, Saturday, Sunday</string>
+
+    <string name="days_option_5_1">Saturday, Sunday</string>
+    <string name="days_option_5_2">Sunday, Monday</string>
+    <string name="days_option_5_3">Monday, Tuesday</string>
+
+    <string name="days_option_6_1">Saturday, Sunday</string>
+    <string name="days_option_6_2">Monday, Tuesday</string>
+    <string name="days_option_6_3">Tuesday, Wednesday</string>
+
+    <string name="days_option_7_1">Monday, Tuesday, Wednesday, Thursday, Friday</string>
+    <string name="days_option_7_2">Tuesday, Wednesday, Thursday, Friday, Saturday</string>
+    <string name="days_option_7_3">Wednesday, Thursday, Friday, Saturday, Sunday</string>
+
+    <string name="days_option_8_1">Tuesday, Wednesday</string>
+    <string name="days_option_8_2">Saturday, Sunday</string>
+    <string name="days_option_8_3">Wednesday, Thursday</string>
+
+    <string name="days_option_9_1">Thursday</string>
+    <string name="days_option_9_2">Wednesday</string>
+    <string name="days_option_9_3">Friday</string>
+
+    <string name="days_option_10_1">Monday, Tuesday, Wednesday, Thursday, Friday</string>
+    <string name="days_option_10_2">Saturday, Sunday</string>
+    <string name="days_option_10_3">Sunday, Monday</string>
+    <string name="play_days_dialouge_1">Get ready for a playful journey through the days of the week! Together, we\'ll
+        learn to count them in order, starting from Monday all the way to Sunday.
+    </string>
+    <string name="play_days_dialouge_2">We\'ll discover the unique characteristics of each day and the adventures that
+        await.
+    </string>
+    <string name="play_days_dialouge_3">Let\'s embark on this fun-filled learning experience!</string>
+    <string name="play_months_dialouge_1">Are you ready to learn about the months of the year in a fun and interactive
+        way?
+    </string>
+    <string name="play_months_dialouge_2">We\'ll go through the months with a quiz, try to select the correct answer.
+    </string>
+    <string name="play_months_dialouge_3">+1 points for correct answers -1 for wrong answers!</string>
+    <string name="play_months_dialouge_4">Let\'s begin our adventure through the twelve months!</string>
+
+    <!-- Questions -->
+    <string name="months_question_1">Which month comes after January?</string>
+    <string name="months_question_2">Which month has 28 or 29 days in a leap year?</string>
+    <string name="months_question_3">Which month is the tenth month of the year?</string>
+    <string name="months_question_4">Which month has 31 days?</string>
+    <string name="months_question_5">Which month is the first month of the year?</string>
+    <string name="months_question_6">Which month is known for being the hottest in the Northern Hemisphere?</string>
+    <string name="months_question_7">Which month is associated with Halloween?</string>
+    <string name="months_question_8">Which month is associated with Thanksgiving in the United States?</string>
+    <string name="months_question_9">Which month is known for having the longest day in the Northern Hemisphere?</string>
+    <string name="months_question_10">Which month marks the beginning of spring in the Northern Hemisphere?</string>
+
+    <!-- Options -->
+    <string name="months_option_1_1">February</string>
+    <string name="months_option_1_2">March</string>
+    <string name="months_option_1_3">April</string>
+    <string name="months_option_2_1">February</string>
+    <string name="months_option_2_2">March</string>
+    <string name="months_option_2_3">December</string>
+    <string name="months_option_3_1">October</string>
+    <string name="months_option_3_2">November</string>
+    <string name="months_option_3_3">September</string>
+    <string name="months_option_4_1">January</string>
+    <string name="months_option_4_2">March</string>
+    <string name="months_option_4_3">May</string>
+    <string name="months_option_5_1">January</string>
+    <string name="months_option_5_2">February</string>
+    <string name="months_option_5_3">December</string>
+    <string name="months_option_6_1">July</string>
+    <string name="months_option_6_2">August</string>
+    <string name="months_option_6_3">September</string>
+    <string name="months_option_7_1">October</string>
+    <string name="months_option_7_2">November</string>
+    <string name="months_option_7_3">December</string>
+    <string name="months_option_8_1">November</string>
+    <string name="months_option_8_2">December</string>
+    <string name="months_option_8_3">October</string>
+    <string name="months_option_9_1">June</string>
+    <string name="months_option_9_2">July</string>
+    <string name="months_option_9_3">August</string>
+    <string name="months_option_10_1">March</string>
+    <string name="months_option_10_2">April</string>
+    <string name="months_option_10_3">May</string>
+    <string name="playing_time">Playing Time!</string>
+    <string name="play_months_description">Learn the months of the year with a fun quiz!</string>
+    <string name="play_days_description">Discover each day through a quiz!</string>
+    <string name="play_seasons_description">Match the correct item with seasons!</string>
+    <string name="multiplication_button">Multiplication</string>
+    <string name="multiplication_description">Uncover the secrets of multiplication and become a master!</string>
+    <string name="follow_egg_button">Follow Egg</string>
+    <string name="egg_description">Have strong eye muscles!</string>
+    <string name="playing_directions_description">Become a pro in navigating directions in this exciting game!</string>
+    <string name="season_playing_dialouge1">Hello, nature enthusiast! It\'s time to put your knowledge about the seasons
+        to test in a fun and engaging way.
+    </string>
+    <string name="season_playing_dialouge2">A captivating image will be shown, and you shall select the correct
+        season.
+    </string>
+    <string name="season_playing_dialouge3">Let\'s discover the joys and changes that each season brings!</string>
+    <string name="check_answer_invalid_text">Please provide an answer</string>
+    <string name="check_answer_correct">Correct!</string>
+    <string name="check_answer_incorrect">Incorrect!</string>
+    <string name="multilication_dialouge1">Are you ready to become a multiplication master?</string>
+    <string name="multilication_dialouge2">We\'re about to uncover the secrets of multiplying numbers.</string>
+    <string name="multilication_dialouge3">Good luck!!!</string>
+    <string name="enter_your_answer">Enter your answer</string>
+    <string name="start">Start</string>
+    <string name="retry">Retry</string>
+    <string name="submit">Submit</string>
+    <string name="ball_dialouge1">Welcome back, adventurer! Get ready to train those eye muscles!!!!!</string>
+    <string name="ball_dialouge2">My egg started to hop violently. Your mission is to follow its every move with your
+        eyes.
+    </string>
+    <string name="ball_dialouge3">Keep those peepers peeled and stay focused!</string>
+    <string name="ball_dialouge4">Let\'s see if you can keep up with the egg\'s unpredictable path. Good luck!</string>
+    <string name="direcitons_playing_dialouge1">I have lost my egg!!! NOOOO, I need to find it.</string>
+    <string name="directions_playing_dialouge2">You must help me by telling me the where the egg is relative to me.
+    </string>
+    <string name="digit_backward_prompt">Enter the numbers in reverse order</string>
+    <string name="restart">Restart</string>
+    <string name="digit_forward_prompt">Enter the numbers in order</string>
+    <string name="direction_playing_question">What direction is Rex looking at?</string>
+    <string name="correct">CORRECT!</string>
+    <string name="too_bad">"TOO BAD, the correct answer was "</string>
+    <string name="spring">spring</string>
+    <string name="summer">summer</string>
+    <string name="autumn">autumn</string>
+    <string name="winter">winter</string>
 </resources>

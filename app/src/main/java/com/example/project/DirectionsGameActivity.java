@@ -1,7 +1,12 @@
 package com.example.project;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.*;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,11 +25,11 @@ public class DirectionsGameActivity extends AppCompatActivity implements View.On
             R.drawable.southdino
     };
 
-    private final String[] correctAnswers = {
-            "North",
-            "East",
-            "West",
-            "South"
+    private final int[] correctAnswers = {
+            R.string.north,
+            R.string.east,
+            R.string.west,
+            R.string.south
     };
 
     @Override
@@ -72,30 +77,55 @@ public class DirectionsGameActivity extends AppCompatActivity implements View.On
         showRandomImage();
     }
 
+    private int lastImageIndex = -1;
+
     private void showRandomImage() {
         Random random = new Random();
-        int randomIndex = random.nextInt(imageIds.length);
+        int randomIndex;
+
+        // Generate a new random index that is different from the last one
+        do {
+            randomIndex = random.nextInt(imageIds.length);
+        } while (randomIndex == lastImageIndex);
+
         imageView.setImageResource(imageIds[randomIndex]);
         imageView.setTag(imageIds[randomIndex]); // Set the tag with the image resource id
+
+        lastImageIndex = randomIndex; // Remember the index of the last image
     }
 
     private void checkAnswer(String chosenAnswer) {
         int currentImageIndex = getCurrentImageIndex();
-
-        if (currentImageIndex >= imageIds.length) {
-            // Quiz is already completed, no need to check the answer
-            Toast.makeText(this, "Quiz completed!", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
+        String message;
         if (chosenAnswer.equals(correctAnswers[currentImageIndex])) {
-            Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
+            message = getString(R.string.correct);
         } else {
-            Toast.makeText(this, "Incorrect! Try again.", Toast.LENGTH_SHORT).show();
-            return; // Exit the method without incrementing the index if the answer is incorrect.
+            message = getString(R.string.too_bad) + getString(correctAnswers[currentImageIndex]);
         }
 
-        showRandomImage();
+        final Dialog dialog = new Dialog(this);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setContentView(R.layout.seasons_dialog_layout);
+
+        TextView dialogText = (TextView) dialog.findViewById(R.id.dialog_text);
+        dialogText.setText(message);
+
+        LinearLayout dialogLayout = (LinearLayout) dialog.findViewById(R.id.seasons_dialog_layout);
+        dialogLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+
+        dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialogInterface) {
+                showRandomImage();
+            }
+        });
     }
 
     private int getCurrentImageIndex() {
@@ -130,5 +160,12 @@ public class DirectionsGameActivity extends AppCompatActivity implements View.On
                 checkAnswer("South");
                 break;
         }
+    }
+
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.direcitons_playing_dialouge1), getString(R.string.directions_playing_dialouge2)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(DirectionsGameActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }

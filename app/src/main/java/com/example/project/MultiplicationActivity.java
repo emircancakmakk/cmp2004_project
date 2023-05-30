@@ -2,6 +2,7 @@ package com.example.project;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -64,6 +65,7 @@ public class MultiplicationActivity extends AppCompatActivity {
                 generateRandomNumbers();
                 startButton.setVisibility(View.GONE);
                 submitButton.setVisibility(View.VISIBLE);
+                submitButton.setEnabled(true); // Enable submitButton when startButton is clicked
             }
         });
 
@@ -71,6 +73,7 @@ public class MultiplicationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 checkAnswer();
+                submitButton.setEnabled(false); // Disable submitButton after it is clicked
             }
         });
 
@@ -78,6 +81,7 @@ public class MultiplicationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 retry();
+                submitButton.setEnabled(true); // Enable submitButton when retryButton is clicked
             }
         });
 
@@ -97,12 +101,22 @@ public class MultiplicationActivity extends AppCompatActivity {
     }
 
     private void checkAnswer() {
-        int userAnswer = Integer.parseInt(resultEditText.getText().toString().trim());
+        String userInput = resultEditText.getText().toString().trim();
+        if (userInput.isEmpty()) {
+            // Display a message or do something when the user input is empty
+            displayResult(getString(R.string.check_answer_invalid_text));
+            submitButton.setVisibility(View.GONE);
+            return;
+        }
+
+        int userAnswer = Integer.parseInt(userInput);
 
         if (userAnswer == correctAnswer) {
-            displayResult("Correct!");
+            displayResult(getString(R.string.check_answer_correct));
+            submitButton.setVisibility(View.GONE);
+            retryButton.setVisibility(View.VISIBLE);
         } else {
-            displayResult("Incorrect!");
+            displayResult(getString(R.string.check_answer_incorrect));
             submitButton.setVisibility(View.GONE);
             retryButton.setVisibility(View.VISIBLE);
         }
@@ -118,5 +132,11 @@ public class MultiplicationActivity extends AppCompatActivity {
         resultEditText.setEnabled(true);
         submitButton.setVisibility(View.VISIBLE);
         generateRandomNumbers();
+    }
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.multilication_dialouge1), getString(R.string.multilication_dialouge2), getString(R.string.multilication_dialouge3)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(MultiplicationActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
     }
 }

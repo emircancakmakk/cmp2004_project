@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.*;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -59,10 +60,10 @@ public class SeasonsPlayingActivity extends AppCompatActivity {
 
         // Initialize season images
         seasonImages = new HashMap<>();
-        seasonImages.put("spring", new Integer[] {R.drawable.bird,R.drawable.tree,R.drawable.flower,R.drawable.bee});
-        seasonImages.put("summer", new Integer[] {R.drawable.sunglasses,R.drawable.sun,R.drawable.icecream,R.drawable.umbrella});
-        seasonImages.put("autumn", new Integer[] {R.drawable.pumpkin,R.drawable.pine,R.drawable.mushroom,R.drawable.dryleaf});
-        seasonImages.put("winter", new Integer[] {R.drawable.snow,R.drawable.snowman,R.drawable.snowglobe,R.drawable.winterhat});
+        seasonImages.put(getString(R.string.spring), new Integer[] {R.drawable.bird,R.drawable.tree,R.drawable.flower,R.drawable.bee});
+        seasonImages.put(getString(R.string.summer), new Integer[] {R.drawable.sunglasses,R.drawable.sun,R.drawable.icecream,R.drawable.umbrella});
+        seasonImages.put(getString(R.string.autumn), new Integer[] {R.drawable.pumpkin,R.drawable.pine,R.drawable.mushroom,R.drawable.dryleaf});
+        seasonImages.put(getString(R.string.winter), new Integer[] {R.drawable.snow,R.drawable.snowman,R.drawable.snowglobe,R.drawable.winterhat});
 
         lastImage = -1;
 
@@ -71,7 +72,7 @@ public class SeasonsPlayingActivity extends AppCompatActivity {
     }
 
     private void startGame() {
-        String[] seasons = new String[] {"spring", "summer", "autumn", "winter"};
+        String[] seasons = new String[] {getString(R.string.spring), getString(R.string.summer), getString(R.string.autumn), getString(R.string.winter)};
         Random random = new Random();
         String randomSeason = seasons[random.nextInt(seasons.length)];
         Integer[] images = seasonImages.get(randomSeason);
@@ -83,18 +84,18 @@ public class SeasonsPlayingActivity extends AppCompatActivity {
 
         seasonImageView.setImageResource(randomImage);
 
-        springButton.setOnClickListener(v -> checkAnswer("spring", randomSeason));
-        summerButton.setOnClickListener(v -> checkAnswer("summer", randomSeason));
-        autumnButton.setOnClickListener(v -> checkAnswer("autumn", randomSeason));
-        winterButton.setOnClickListener(v -> checkAnswer("winter", randomSeason));
+        springButton.setOnClickListener(v -> checkAnswer(getString(R.string.spring), randomSeason));
+        summerButton.setOnClickListener(v -> checkAnswer(getString(R.string.summer), randomSeason));
+        autumnButton.setOnClickListener(v -> checkAnswer(getString(R.string.autumn), randomSeason));
+        winterButton.setOnClickListener(v -> checkAnswer(getString(R.string.winter), randomSeason));
     }
 
     private void checkAnswer(String userAnswer, String correctAnswer) {
         String message;
         if (userAnswer.equals(correctAnswer)) {
-            message = "CORRECT!";
+            message = getString(R.string.correct);
         } else {
-            message = "TOO BAD, the correct answer was " + correctAnswer;
+            message = getString(R.string.too_bad) + correctAnswer;
         }
 
         final Dialog dialog = new Dialog(this);
@@ -121,7 +122,12 @@ public class SeasonsPlayingActivity extends AppCompatActivity {
             }
         });
     }
-
+    public void question_mark(View v) {
+        String[] dialogueChunks = {getString(R.string.season_playing_dialouge1), getString(R.string.season_playing_dialouge2), getString(R.string.season_playing_dialouge3)}; // Add your own dialogue here
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        TalkingCharacter talkingCharacter = new TalkingCharacter(SeasonsPlayingActivity.this, R.layout.dialog_layout, dialogueChunks);
+        talkingCharacter.showDialog();
+    }
 
 }
 
