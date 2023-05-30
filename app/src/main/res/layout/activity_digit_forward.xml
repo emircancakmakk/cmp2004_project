@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/joystix"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:hint="@string/digit_forward_prompt"
             android:textSize="12sp"
             android:inputType="number"
