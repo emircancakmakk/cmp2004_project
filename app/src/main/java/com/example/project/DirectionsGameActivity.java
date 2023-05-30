@@ -145,7 +145,6 @@ public class DirectionsGameActivity extends AppCompatActivity implements View.On
 
         return -1; // Image index not found
     }
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -156,10 +155,10 @@ public class DirectionsGameActivity extends AppCompatActivity implements View.On
                 checkAnswer(getString(R.string.west));
                 break;
             case R.id.buttonEast:
-                checkAnswer(getString(R.string.south));
+                checkAnswer(getString(R.string.east));
                 break;
             case R.id.buttonSouth:
-                checkAnswer(getString(R.string.east));
+                checkAnswer(getString(R.string.south));
                 break;
         }
     }
